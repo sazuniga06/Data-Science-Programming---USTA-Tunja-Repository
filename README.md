@@ -23,7 +23,7 @@
   </p>
   
   <p style="margin-top: 10px;">
-    <a href="https://sazuniga06.github.io/Data-Science-Programming---USTA-Tunja-Repository/" style="background: #1e3a8a; color: #ffffff; padding: 10px 22px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 0.95em; box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3); display: inline-block;">
+    <a href="https://gescienciadatos.github.io/Data-Science-Programming---USTA-Tunja-Repository/" style="background: #1e3a8a; color: #ffffff; padding: 10px 22px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 0.95em; box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3); display: inline-block;">
       🚀 Acceder al Laboratorio Virtual Interactivo
     </a>
   </p>
