@@ -5,7 +5,8 @@
   <h3 style="margin-top: 5px; color: #1e3a8a; font-weight: 600;">Especialización en Ciencia de Datos | Universidad Santo Tomás — Seccional Tunja</h3>
   
   <p style="font-size: 1.05em; color: #475569; max-width: 750px;">
-    Repositorio oficial del curso <b>Programación para Ciencia de Datos</b>. Contiene el material pedagógico estructurado, cuadernos interactivos con prácticas guiadas, conjuntos de datos reales y talleres evaluativos de aplicación práctica.
+    Repositorio oficial del curso <b>Programación para Ciencia de Datos</b>. Contiene el material pedagógico estructurado, cuadernos interactivos con prácticas guiadas, conjuntos de datos reales y talleres de refuerzo.
+    
   </p>
 
   <p>
