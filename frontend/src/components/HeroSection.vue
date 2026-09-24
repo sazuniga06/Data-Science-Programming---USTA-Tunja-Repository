@@ -8,7 +8,7 @@ const props = defineProps({
   },
   totalBooks: {
     type: Number,
-    default: 51
+    default: 122
   }
 });
 

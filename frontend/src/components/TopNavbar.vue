@@ -10,7 +10,7 @@ defineProps({
   },
   totalBooks: {
     type: Number,
-    default: 51
+    default: 122
   },
   isDarkMode: {
     type: Boolean,
