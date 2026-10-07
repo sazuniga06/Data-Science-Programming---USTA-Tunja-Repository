@@ -49,6 +49,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 | 1.3.3 | Mejores prácticas para el diseño de visualizaciones efectivas | Cuaderno 03 *(nivel inicial)* |
 | 1.4 – 1.6 | Gramática de gráficos, sesgos cognitivos y aplicación a datos reales | Módulos 02, 03, 04 y 05 |
 
+> 🛠️ **Práctica:** los notebooks de este módulo (incluidos los de `Para Dummies/`) incluyen secciones «🛠️ Práctica» en las que debes producir o rediseñar un gráfico con código, con una solución desplegable para comparar.
+
 ---
 
 <div align="center">

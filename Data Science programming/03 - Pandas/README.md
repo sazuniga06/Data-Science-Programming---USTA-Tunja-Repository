@@ -13,6 +13,8 @@
 
 A lo largo de este módulo dominarás las estructuras de datos fundamentales (`Series` y `DataFrames`), la lectura y escritura eficiente de múltiples formatos de archivos (CSV, Excel, JSON, Parquet), técnicas avanzadas de filtrado e indexación con `loc` e `iloc`, transformaciones y agregaciones grupales (*Group By*), y cruces relacionales estilo base de datos SQL (*Merge, Join, Concat*).
 
+> 🛠️ Los notebooks incluyen secciones «🛠️ Práctica» con una celda para escribir tu código y la solución desplegable.
+
 ---
 
 ## 🗺️ Estructura del Módulo

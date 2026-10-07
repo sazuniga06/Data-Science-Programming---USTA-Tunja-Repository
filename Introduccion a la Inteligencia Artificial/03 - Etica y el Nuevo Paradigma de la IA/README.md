@@ -37,6 +37,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 2. [**01_IA_ML_DL_Dummies.ipynb**](Para%20Dummies/01_IA_ML_DL_Dummies.ipynb): Las muñecas rusas del cerebro digital — IA, Machine Learning y Deep Learning sin jerga técnica.
 3. [**02_IA_Generativa_Dummies.ipynb**](Para%20Dummies/02_IA_Generativa_Dummies.ipynb): El loro que aprendió a inventar cuentos — una introducción amena a la IA Generativa.
 
+> 🛠️ **Ponlo en práctica:** todos los cuadernos (estándar y *Para Dummies*) incluyen secciones **«🛠️ Práctica»**: una celda de código para que escribas tu solución y, justo debajo, la **solución guiada desplegable** (`💡 Haz clic aquí para ver la solución guiada...`). Inténtalo primero y abre la solución solo para comparar.
+
 ---
 
 <div align="center">

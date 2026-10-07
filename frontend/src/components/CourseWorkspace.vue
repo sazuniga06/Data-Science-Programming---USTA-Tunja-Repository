@@ -61,6 +61,20 @@ const bookCategories = computed(() => {
 
 // Datasets reactive state
 const selectedDatasetIndex = ref(0);
+const datasetCleaningFilter = ref('all'); // 'all' | 'dirty' | 'clean'
+
+const courseDirtyDatasetsCount = computed(() => (props.course.datasets || []).filter(d => d.requires_cleaning).length);
+const courseCleanDatasetsCount = computed(() => (props.course.datasets || []).filter(d => !d.requires_cleaning).length);
+
+const filteredCourseDatasets = computed(() => {
+  const list = props.course.datasets || [];
+  if (datasetCleaningFilter.value === 'dirty') {
+    return list.filter(d => d.requires_cleaning);
+  } else if (datasetCleaningFilter.value === 'clean') {
+    return list.filter(d => !d.requires_cleaning);
+  }
+  return list;
+});
 
 // Computed Filters
 const filteredNotebooks = computed(() => {
@@ -141,7 +155,7 @@ const filteredBooks = computed(() => {
 });
 
 const selectedDataset = computed(() => {
-  const dsList = props.course.datasets || [];
+  const dsList = filteredCourseDatasets.value;
   return dsList[selectedDatasetIndex.value] || dsList[0] || null;
 });
 
@@ -823,18 +837,65 @@ function copyColabLink(url) {
       <div v-else class="grid grid-cols-1 lg:grid-cols-12 gap-6">
         <!-- Left: Datasets Selector -->
         <div class="lg:col-span-4 space-y-2">
+          <!-- Quality Filter Tabs -->
+          <div class="flex items-center gap-1.5 pb-1 overflow-x-auto text-[10px] font-mono scrollbar-none">
+            <button 
+              @click="datasetCleaningFilter = 'all'; selectedDatasetIndex = 0"
+              class="px-2 py-0.5 rounded transition-all shrink-0 cursor-pointer"
+              :class="datasetCleaningFilter === 'all' ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 font-semibold shadow-xs' : 'bg-slate-200/70 text-slate-600 dark:bg-space-900 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100'"
+            >
+              Todos ({{ (course.datasets || []).length }})
+            </button>
+            <button 
+              @click="datasetCleaningFilter = 'dirty'; selectedDatasetIndex = 0"
+              class="px-2 py-0.5 rounded transition-all shrink-0 flex items-center gap-1 cursor-pointer"
+              :class="datasetCleaningFilter === 'dirty' ? 'bg-rose-600 text-white font-semibold shadow-xs' : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20 hover:bg-rose-500/20'"
+            >
+              <span class="w-1.5 h-1.5 rounded-full" :class="datasetCleaningFilter === 'dirty' ? 'bg-white' : 'bg-rose-500'"></span>
+              Requiere Limpieza ({{ courseDirtyDatasetsCount }})
+            </button>
+            <button 
+              @click="datasetCleaningFilter = 'clean'; selectedDatasetIndex = 0"
+              class="px-2 py-0.5 rounded transition-all shrink-0 flex items-center gap-1 cursor-pointer"
+              :class="datasetCleaningFilter === 'clean' ? 'bg-emerald-600 text-white font-semibold shadow-xs' : 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20'"
+            >
+              <span class="w-1.5 h-1.5 rounded-full" :class="datasetCleaningFilter === 'clean' ? 'bg-white' : 'bg-emerald-500'"></span>
+              Limpio ({{ courseCleanDatasetsCount }})
+            </button>
+          </div>
+
+          <div v-if="filteredCourseDatasets.length === 0" class="p-6 text-center border border-dashed border-slate-200 dark:border-slate-800 rounded-lg text-xs font-mono text-slate-400">
+            No se encontraron datasets para el filtro seleccionado.
+          </div>
+
           <button 
-            v-for="(ds, idx) in course.datasets"
-            :key="ds.name"
+            v-for="(ds, idx) in filteredCourseDatasets" 
+            :key="ds.path || ds.name"
             @click="selectedDatasetIndex = idx"
-            class="w-full text-left p-3 rounded-lg border transition-all text-xs font-mono group relative"
-            :class="selectedDatasetIndex === idx ? 'bg-white dark:bg-space-850 border-brand-cyan text-slate-900 dark:text-slate-100 font-semibold shadow-xs' : 'bg-slate-50 dark:bg-space-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-space-900'"
+            class="w-full text-left p-3 rounded-lg border transition-all text-xs font-mono group relative cursor-pointer"
+            :class="selectedDataset?.path === ds.path || selectedDataset?.name === ds.name ? 'bg-white dark:bg-space-850 border-brand-cyan text-slate-900 dark:text-slate-100 font-semibold shadow-xs' : 'bg-slate-50 dark:bg-space-950 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-space-900'"
           >
-            <div class="flex items-center justify-between mb-1">
-              <span class="truncate pr-2 font-medium">{{ ds.name }}</span>
-              <span class="text-[10px] px-1.5 py-0.2 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 shrink-0 font-medium">
-                CSV
-              </span>
+            <div class="flex items-center justify-between mb-1 gap-1">
+              <span class="truncate pr-2 font-medium flex-1">{{ ds.name }}</span>
+              <div class="flex items-center gap-1 shrink-0">
+                <span 
+                  v-if="ds.requires_cleaning" 
+                  class="text-[9px] px-1.5 py-0.2 rounded font-mono font-medium bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20"
+                  title="Requiere limpieza de datos"
+                >
+                  Requiere Limpieza
+                </span>
+                <span 
+                  v-else 
+                  class="text-[9px] px-1.5 py-0.2 rounded font-mono font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20"
+                  title="Dataset limpio listo para usar"
+                >
+                  Limpio
+                </span>
+                <span class="text-[9px] px-1 py-0.2 rounded bg-slate-200 dark:bg-space-800 text-slate-700 dark:text-slate-300 font-mono">
+                  {{ ds.format || 'CSV' }}
+                </span>
+              </div>
             </div>
             <p class="text-[10px] text-slate-500 line-clamp-1 font-normal mb-1.5">
               {{ ds.description }}
@@ -844,7 +905,7 @@ function copyColabLink(url) {
               <span 
                 @click.stop="downloadDataset(ds)"
                 class="hover:text-emerald-500 transition-colors p-0.5 rounded"
-                title="Descargar este archivo CSV"
+                :title="'Descargar ' + ds.name"
               >
                 <span class="material-symbols-outlined text-sm">download</span>
               </span>
@@ -859,13 +920,28 @@ function copyColabLink(url) {
             <!-- Dataset Header & Action Bar -->
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 pb-4 border-b border-slate-200 dark:border-slate-800">
               <div class="space-y-1">
-                <div class="flex items-center gap-2">
+                <div class="flex flex-wrap items-center gap-2">
                   <span class="material-symbols-outlined text-brand-cyan text-lg">database</span>
                   <h4 class="text-base font-semibold text-slate-900 dark:text-slate-100 font-mono">
                     {{ selectedDataset.name }}
                   </h4>
-                  <span class="text-[10px] px-2 py-0.5 rounded-full font-mono font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                    CSV
+                  <span class="text-[10px] px-2 py-0.5 rounded-full font-mono font-medium bg-slate-100 dark:bg-space-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700">
+                    {{ selectedDataset.format || 'CSV' }}
+                  </span>
+                  <!-- Quality Status Badge -->
+                  <span 
+                    v-if="selectedDataset.requires_cleaning" 
+                    class="text-[10px] px-2.5 py-0.5 rounded-full font-mono font-semibold bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20 flex items-center gap-1 shadow-xs"
+                  >
+                    <span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse"></span>
+                    Requiere Limpieza
+                  </span>
+                  <span 
+                    v-else 
+                    class="text-[10px] px-2.5 py-0.5 rounded-full font-mono font-semibold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 flex items-center gap-1 shadow-xs"
+                  >
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    No Requiere Limpieza (Limpio)
                   </span>
                 </div>
                 <p class="text-xs text-slate-500 dark:text-slate-400">{{ selectedDataset.description }}</p>
@@ -887,7 +963,7 @@ function copyColabLink(url) {
                   @click="downloadDataset(selectedDataset)"
                   :disabled="isDownloadingDataset"
                   class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white font-mono text-xs font-semibold flex items-center gap-2 shadow-sm hover:shadow transition-all disabled:opacity-50 cursor-pointer"
-                  :title="'Descargar ' + selectedDataset.name + ' en formato CSV'"
+                  :title="'Descargar ' + selectedDataset.name"
                 >
                   <span class="material-symbols-outlined text-base">
                     {{ isDownloadingDataset ? 'sync' : 'download' }}
@@ -937,6 +1013,40 @@ function copyColabLink(url) {
                 <span class="text-[10px] text-slate-400 block uppercase tracking-wider mb-0.5">Variables Predictoras / Features:</span>
                 <span class="text-slate-700 dark:text-slate-300 truncate block" :title="selectedDataset.features">{{ selectedDataset.features }}</span>
               </div>
+            </div>
+
+            <!-- Quality Diagnostic Card -->
+            <div v-if="selectedDataset.requires_cleaning" class="p-3.5 rounded-xl bg-rose-500/5 dark:bg-rose-950/20 border border-rose-500/20 space-y-2 font-mono text-xs">
+              <div class="flex items-center justify-between text-rose-600 dark:text-rose-400 font-semibold">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-base">warning</span>
+                  <span>Diagnóstico de Calidad: Requiere Limpieza de Datos</span>
+                </div>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-rose-500/10 border border-rose-500/20 uppercase tracking-wider font-semibold">
+                  Severidad: {{ selectedDataset.cleaning_level || 'Atención' }}
+                </span>
+              </div>
+              <div class="space-y-1">
+                <div class="text-[11px] text-slate-700 dark:text-slate-300 font-medium">Motivos identificados:</div>
+                <ul class="list-disc list-inside text-[11px] text-slate-600 dark:text-slate-400 space-y-0.5 pl-1">
+                  <li v-for="(reason, rIdx) in selectedDataset.cleaning_reasons" :key="rIdx">
+                    {{ reason }}
+                  </li>
+                </ul>
+              </div>
+              <div v-if="selectedDataset.cleaning_actions && selectedDataset.cleaning_actions.length > 0" class="pt-2 border-t border-rose-500/15 flex items-start gap-1.5 text-[11px] text-emerald-700 dark:text-emerald-400">
+                <span class="material-symbols-outlined text-sm shrink-0">build_circle</span>
+                <span><strong>Acción recomendada:</strong> {{ selectedDataset.cleaning_actions.join('; ') }}</span>
+              </div>
+            </div>
+            <div v-else class="p-3 rounded-xl bg-emerald-500/5 dark:bg-emerald-950/20 border border-emerald-500/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 font-mono text-xs text-emerald-700 dark:text-emerald-300">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-base text-emerald-500">verified</span>
+                <span>Dataset 100% íntegro: 0 nulos, 0 duplicados y tipos validados. Listo para modelado directo.</span>
+              </div>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 uppercase tracking-wider font-semibold shrink-0">
+                Calidad: Óptima
+              </span>
             </div>
 
             <!-- Table Preview -->

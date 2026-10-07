@@ -26,6 +26,8 @@ Bienvenido al módulo especializado de **Comparación de Árboles de Decisión y
 ### 🧸 3. Ruta Didáctica: Para Dummies:
 Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/).
 
+> 🛠️ **Ponlo en práctica:** los cuadernos de la ruta *Para Dummies* incluyen secciones **«🛠️ Práctica»**: una celda de código para que escribas tu solución y, justo debajo, la **solución guiada desplegable** (`💡 Haz clic aquí para ver la solución guiada...`). Inténtalo primero y abre la solución solo para comparar.
+
 ---
 
 <div align="center">

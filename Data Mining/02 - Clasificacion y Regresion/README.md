@@ -26,6 +26,8 @@ Bienvenido al módulo de **Clasificación y Regresión** de la asignatura **Mine
 ### 🧸 3. Ruta Didáctica: Para Dummies:
 Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/).
 
+> 🛠️ **Ponlo en práctica:** los cuadernos de la ruta *Para Dummies* incluyen secciones **«🛠️ Práctica»**: una celda de código para que escribas tu solución y, justo debajo, la **solución guiada desplegable**. Inténtalo primero y abre la solución solo para comparar.
+
 ---
 
 <div align="center">

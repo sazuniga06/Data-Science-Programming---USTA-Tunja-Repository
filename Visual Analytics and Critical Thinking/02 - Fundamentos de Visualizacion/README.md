@@ -29,6 +29,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 2. [**01_Tipos_de_Visualizaciones_Dummies.ipynb**](Para%20Dummies/01_Tipos_de_Visualizaciones_Dummies.ipynb): El menú del restaurante, el GPS del celular y el árbol genealógico como analogías de chart/table/map/graph.
 3. [**02_Herramientas_Tableau_PowerBI_D3_Dummies.ipynb**](Para%20Dummies/02_Herramientas_Tableau_PowerBI_D3_Dummies.ipynb): La olla arrocera vs. cocinar desde cero, para entender low-code vs. code-first.
 
+> 🛠️ **Práctica:** los notebooks de este módulo (incluidos los de `Para Dummies/`) incluyen secciones «🛠️ Práctica» en las que debes producir o rediseñar un gráfico con código, con una solución desplegable para comparar.
+
 ---
 
 ## 🔗 Recurso Complementario

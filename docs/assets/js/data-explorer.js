@@ -77,15 +77,21 @@
 
     container.innerHTML = catalogDatasets.map(ds => {
       const rawDownloadUrl = `https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/${encodeURIComponent(ds.path).replace(/%2F/g, '/')}`;
+      const cleaningBadgeHtml = ds.requires_cleaning 
+        ? `<span class="text-[10px] font-mono text-rose-500 bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20 font-semibold">Requiere Limpieza</span>`
+        : `<span class="text-[10px] font-mono text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20 font-semibold">Limpio</span>`;
 
       return `
         <div class="glass-panel rounded-2xl p-5 border border-outline-variant flex flex-col justify-between group hover:-translate-y-1 transition-all duration-300">
           <div>
-            <div class="flex justify-between items-center mb-2">
+            <div class="flex justify-between items-center mb-2 gap-2 flex-wrap">
               <h3 class="font-headline-md text-base text-on-surface flex items-center gap-2 group-hover:text-primary transition-colors">
                 <span class="material-symbols-outlined text-primary text-sm">database</span> ${ds.name}
               </h3>
-              <span class="text-[10px] font-mono text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">${ds.module || 'Dataset'}</span>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-mono text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">${ds.module || 'Dataset'}</span>
+                ${cleaningBadgeHtml}
+              </div>
             </div>
             <div class="flex flex-wrap gap-2 text-xs font-mono mb-2 text-on-surface-variant">
               <span>📐 ${(ds.rows || 0).toLocaleString()} filas</span>

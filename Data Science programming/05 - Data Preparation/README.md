@@ -13,6 +13,9 @@ En el mundo real, los datos nunca vienen limpios ni listos para su uso directo. 
 
 En este módulo aprenderás las metodologías estándar para diagnosticar y tratar datos faltantes mediante imputación univariada y multivariada con Scikit-Learn, transformar y reescalar atributos continuos (*Feature Scaling* con Min-Max y StandardScaler), manipular tipos temporales (`datetime`), y corregir inconsistencias en texto mediante algoritmos de coincidencia difusa (*Fuzzy Matching* con distancia de Levenshtein).
 
+> 🛠️ Los notebooks (estándar y Para Dummies) incluyen secciones «🛠️ Práctica» para que pongas lo aprendido a prueba.
+> Cada práctica trae su solución desplegable (`<details>`) para consultarla después de intentarlo.
+
 ---
 
 ## 🗺️ Estructura del Módulo

@@ -37,6 +37,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 2. [**01_Fortalezas_y_Limitaciones_Dummies.ipynb**](Para%20Dummies/01_Fortalezas_y_Limitaciones_Dummies.ipynb): Python vs. herramientas BI explicado con la analogía de "cocinar desde cero" contra "usar una olla programable".
 3. [**02_Mejores_Practicas_Dummies.ipynb**](Para%20Dummies/02_Mejores_Practicas_Dummies.ipynb): El checklist final explicado como la lista de chequeo de un piloto antes de despegar.
 
+> 🛠️ **Práctica:** los notebooks de este módulo (incluidos los de `Para Dummies/`) incluyen secciones «🛠️ Práctica» en las que aplicas los casos con código (rediseñar un panel, elegir la herramienta o el gráfico adecuado y auditar un gráfico con el checklist), con una solución desplegable para comparar.
+
 ---
 
 ## 📖 Glosario

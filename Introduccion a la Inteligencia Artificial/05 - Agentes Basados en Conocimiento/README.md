@@ -17,6 +17,8 @@ Un **agente basado en conocimiento** (*knowledge-based agent*) es un agente inte
 
 En este módulo construimos, **desde cero y en Python puro** (sin librerías externas de lógica simbólica), toda la maquinaria necesaria para representar conocimiento con **lógica proposicional**, verificarlo mediante **model checking** por fuerza bruta, y realizar inferencia eficiente mediante **Forma Normal Conjuntiva (CNF)** y **resolución**.
 
+> 🛠️ **Ponlo en práctica:** los cuadernos incluyen secciones **«🛠️ Práctica»**: una celda de código para que escribas tu solución y, justo debajo, la **solución guiada desplegable** (`💡 Haz clic aquí para ver la solución guiada...`). Inténtalo primero y abre la solución solo para comparar.
+
 ---
 
 ## 📚 Estructura Curricular del Módulo

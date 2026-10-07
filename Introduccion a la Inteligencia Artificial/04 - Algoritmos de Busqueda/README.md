@@ -50,6 +50,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 3. [**02_GBFS_Dummies.ipynb**](Para%20Dummies/02_GBFS_Dummies.ipynb): GBFS, el detective que sigue el olfato (y a veces se equivoca).
 4. [**03_A_Estrella_Dummies.ipynb**](Para%20Dummies/03_A_Estrella_Dummies.ipynb): A\*, el GPS que nunca se equivoca.
 
+> 🛠️ **Práctica:** los cuadernos de este módulo (estándar y Para Dummies) incluyen secciones «🛠️ Práctica» con una celda para escribir tu código y una solución desplegable.
+
 ---
 
 ## 🏢 El Caso de Estudio: Constructora Horizonte Andino S.A.S.

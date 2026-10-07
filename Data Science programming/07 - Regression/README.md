@@ -17,6 +17,9 @@ En este módulo estudiarás desde la deducción matemática de la **Ecuación No
 * Regresión Polinomial y técnicas de contracción de coeficientes: **Ridge ($L_2$)**, **Lasso ($L_1$)** y **ElasticNet**.
 * Estrategias de **Validación Cruzada (*K-Fold Cross Validation*)**, ajuste sistemático de hiperparámetros con **`GridSearchCV`** y regresores no paramétricos basados en instancias (**$k$-NN Regressor**).
 
+> 🛠️ Los notebooks (estándar y Para Dummies) incluyen secciones «🛠️ Práctica» para que pongas lo aprendido a prueba.
+> Cada práctica trae su solución desplegable (`<details>`) para consultarla después de intentarlo.
+
 ---
 
 ## 🗺️ Estructura del Módulo

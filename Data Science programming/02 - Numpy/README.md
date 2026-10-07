@@ -46,6 +46,8 @@ En este módulo aprenderás a dominar la estructura de datos `ndarray` (arreglos
 * 📝 [**02_NumPy_Hands_On.ipynb](../homeworks/02_NumPy_Hands_On.ipynb)**: Taller integral de cálculo numérico, álgebra lineal y manipulación vectorial con NumPy.
 * 💡 [**02_NumPy_Hands_On_Dummies.ipynb](../homeworks/Para%20Dummies/02_NumPy_Hands_On_Dummies.ipynb)**: Taller guiado paso a paso para no ingenieros.
 
+> 🛠️ Los cuadernos del módulo (estándar y *Para Dummies*) incluyen secciones **«🛠️ Práctica»** con solución desplegable para poner a prueba lo aprendido.
+
 ---
 
 <div align="center">

@@ -43,6 +43,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 4. [**03_Calidad_Datos_Dummies.ipynb**](Para%20Dummies/03_Calidad_Datos_Dummies.ipynb): Basura entra, basura sale: cómo lavar los ingredientes antes de cocinar.
 5. [**04_Etica_Privacidad_Dummies.ipynb**](Para%20Dummies/04_Etica_Privacidad_Dummies.ipynb): Poder ilimitado sin terminar en la cárcel: ética para científicos de datos.
 
+> 🛠️ **Ponlo en práctica:** todos los cuadernos (estándar y *Para Dummies*) incluyen secciones **«🛠️ Práctica»**: una celda de código para que escribas tu solución y, justo debajo, la **solución guiada desplegable** (`💡 Haz clic aquí para ver la solución guiada...`). Inténtalo primero y abre la solución solo para comparar.
+
 ---
 
 ## 💾 Conjuntos de Datos Incluidos

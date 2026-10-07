@@ -32,6 +32,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 2. [**01_Temporal_Dummies.ipynb**](Para%20Dummies/01_Temporal_Dummies.ipynb): Series de tiempo vs. eventos explicados con la báscula del lunes (ritmo fijo) y el timbre de la puerta (ritmo irregular).
 3. [**02_Multivariada_Dummies.ipynb**](Para%20Dummies/02_Multivariada_Dummies.ipynb): Comparar muchas variables a la vez explicado con la "ficha de estadísticas" de un personaje de videojuego.
 
+> 🛠️ **Práctica:** los notebooks de este módulo (incluidos los de `Para Dummies/`) incluyen secciones «🛠️ Práctica» en las que debes producir o ajustar un gráfico con código, con una solución desplegable para comparar.
+
 ---
 
 <div align="center">

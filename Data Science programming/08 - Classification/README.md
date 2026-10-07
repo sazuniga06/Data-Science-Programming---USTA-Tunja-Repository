@@ -21,6 +21,9 @@ En este módulo aprenderás las metodologías fundamentales y avanzadas del mode
 * Algoritmo no paramétrico basado en instancias: **$k$-Nearest Neighbors ($k$-NN Classifier)** y la **importancia crítica del escalado de variables (`StandardScaler`)**.
 * Validación Cruzada Estratificada (**`StratifiedKFold`**), construcción de **`Pipeline`** robustos y optimización de hiperparámetros con **`GridSearchCV`**.
 
+> 🛠️ Los notebooks (estándar y Para Dummies) incluyen secciones «🛠️ Práctica» para que pongas lo aprendido a prueba.
+> Cada práctica trae su solución desplegable (`<details>`) para consultarla después de intentarlo.
+
 ---
 
 ## 🗺️ Estructura y Cuadernos del Módulo

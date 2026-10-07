@@ -34,6 +34,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 3. [**02_Tecnicas_Numericos_Dummies.ipynb**](Para%20Dummies/02_Tecnicas_Numericos_Dummies.ipynb): Línea, histograma y scatter plot explicados con el café que se enfría, salarios simulados y relaciones cotidianas.
 4. [**03_Caso_Numericos_Dummies.ipynb**](Para%20Dummies/03_Caso_Numericos_Dummies.ipynb): El mismo estudio de caso contado como una historia de detective que junta pistas para resolver por qué una tienda en línea se pone lenta.
 
+> 🛠️ **Práctica:** los notebooks de este módulo (incluidos los de `Para Dummies/`) incluyen secciones «🛠️ Práctica» en las que debes producir o analizar un gráfico numérico con código, con una solución desplegable para comparar.
+
 ---
 
 <div align="center">

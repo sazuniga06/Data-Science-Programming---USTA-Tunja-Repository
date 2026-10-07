@@ -2772,6 +2772,7 @@ export const CATALOG_DATA = {
       "datasets": [
         {
           "name": "mall_customers.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "10 - Clustering",
           "path": "Data Science programming/10 - Clustering/data/mall_customers.csv",
@@ -2819,10 +2820,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/10%20-%20Clustering/data/mall_customers.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/10%20-%20Clustering/data/mall_customers.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/10%20-%20Clustering/data/mall_customers.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/10%20-%20Clustering/data/mall_customers.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "accidents.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "06 - Feature Engineering",
           "path": "Data Science programming/06 - Feature Engineering/data/accidents.csv",
@@ -2990,10 +3005,22 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/accidents.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/accidents.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/accidents.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/accidents.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "amber",
+          "cleaning_level": "Menor",
+          "cleaning_reasons": [
+            "25 registros exactamente idénticos en todas las características"
+          ],
+          "cleaning_actions": [
+            "Eliminar registros duplicados mediante drop_duplicates()"
+          ]
         },
         {
           "name": "autos.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "06 - Feature Engineering",
           "path": "Data Science programming/06 - Feature Engineering/data/autos.csv",
@@ -3141,10 +3168,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/autos.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/autos.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/autos.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/autos.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "concrete.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "06 - Feature Engineering",
           "path": "Data Science programming/06 - Feature Engineering/data/concrete.csv",
@@ -3212,10 +3253,22 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/concrete.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/concrete.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/concrete.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/concrete.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "amber",
+          "cleaning_level": "Media",
+          "cleaning_reasons": [
+            "25 formulaciones de mezclas de hormigón exactamente duplicadas (2.43%)"
+          ],
+          "cleaning_actions": [
+            "Eliminar formulaciones repetidas o calcular agregación de resistencia"
+          ]
         },
         {
           "name": "customer.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "06 - Feature Engineering",
           "path": "Data Science programming/06 - Feature Engineering/data/customer.csv",
@@ -3363,10 +3416,22 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/customer.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/customer.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/customer.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/customer.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "amber",
+          "cleaning_level": "Menor",
+          "cleaning_reasons": [
+            "Columna parásita de índice residual 'Unnamed: 0'"
+          ],
+          "cleaning_actions": [
+            "Eliminar la columna residual mediante drop(columns=['Unnamed: 0']) o index_col=0"
+          ]
         },
         {
           "name": "melb_data.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "06 - Feature Engineering",
           "path": "Data Science programming/06 - Feature Engineering/data/melb_data.csv",
@@ -3494,10 +3559,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/melb_data.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/melb_data.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/melb_data.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/melb_data.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "rose",
+          "cleaning_level": "Crítica",
+          "cleaning_reasons": [
+            "13,256 valores nulos en atributos clave de tasación (BuildingArea: 47.5% nulos, YearBuilt: 39.6% nulos)",
+            "Valores nulos en CouncilArea y Car"
+          ],
+          "cleaning_actions": [
+            "Imputar BuildingArea y YearBuilt por tipo y zona",
+            "Crear variables indicadoras binarias de ausencia (missing indicators)"
+          ]
         },
         {
           "name": "movielens1m.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "06 - Feature Engineering",
           "path": "Data Science programming/06 - Feature Engineering/data/movielens1m.csv",
@@ -3660,10 +3739,23 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/movielens1m.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/movielens1m.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/movielens1m.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/movielens1m.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "amber",
+          "cleaning_level": "Media",
+          "cleaning_reasons": [
+            "Serialización errónea de bytes literales b'...' en columnas Movie ID y Zipcode"
+          ],
+          "cleaning_actions": [
+            "Sanitizar cadenas eliminando prefijo b' y comillas simples",
+            "Convertir Movie ID a tipo entero y Zipcode a string limpio"
+          ]
         },
         {
           "name": "customer_churn.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "08 - Classification",
           "path": "Data Science programming/08 - Classification/data/customer_churn.csv",
@@ -3716,10 +3808,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/customer_churn.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/customer_churn.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/customer_churn.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/customer_churn.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "heart_disease.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "08 - Classification",
           "path": "Data Science programming/08 - Classification/data/heart_disease.csv",
@@ -3777,10 +3883,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/heart_disease.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/heart_disease.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/heart_disease.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/heart_disease.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "iris.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "08 - Classification",
           "path": "Data Science programming/08 - Classification/data/iris.csv",
@@ -3833,10 +3953,22 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/iris.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/iris.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/iris.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/iris.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "amber",
+          "cleaning_level": "Menor",
+          "cleaning_reasons": [
+            "1 fila duplicada exacta (observaciones 117 y 125, especie virginica)"
+          ],
+          "cleaning_actions": [
+            "Verificar si se desea conservar la medición natural o eliminar la fila repetida"
+          ]
         },
         {
           "name": "clientes.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "11 - Polars",
           "path": "Data Science programming/11 - Polars/data/clientes.csv",
@@ -3889,10 +4021,53 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
+        },
+        {
+          "name": "clientes.parquet",
+          "format": "Parquet",
+          "course_name": "Data Science Programming",
+          "module": "11 - Polars",
+          "path": "Data Science programming/11 - Polars/data/clientes.parquet",
+          "rows": 1500,
+          "cols": 6,
+          "target": "col2",
+          "features": "id, col1, col2",
+          "description": "Dataset oficial de práctica para 11 - Polars (Data Science Programming).",
+          "sample_data": [],
+          "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.parquet",
+          "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.parquet",
+          "snippet": "import polars as pl\ndf = pl.read_parquet('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.parquet')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "ventas.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "11 - Polars",
           "path": "Data Science programming/11 - Polars/data/ventas.csv",
@@ -3965,10 +4140,53 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
+        },
+        {
+          "name": "ventas.parquet",
+          "format": "Parquet",
+          "course_name": "Data Science Programming",
+          "module": "11 - Polars",
+          "path": "Data Science programming/11 - Polars/data/ventas.parquet",
+          "rows": 1500,
+          "cols": 6,
+          "target": "col2",
+          "features": "id, col1, col2",
+          "description": "Dataset oficial de práctica para 11 - Polars (Data Science Programming).",
+          "sample_data": [],
+          "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.parquet",
+          "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.parquet",
+          "snippet": "import polars as pl\ndf = pl.read_parquet('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.parquet')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "Advertising.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "07 - Regression",
           "path": "Data Science programming/07 - Regression/data/Advertising.csv",
@@ -4016,10 +4234,22 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/Advertising.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/Advertising.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/Advertising.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/Advertising.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "amber",
+          "cleaning_level": "Menor",
+          "cleaning_reasons": [
+            "Columna parásita de índice residual 'Unnamed: 0'"
+          ],
+          "cleaning_actions": [
+            "Eliminar la columna residual antes de entrenar modelos de regresión"
+          ]
         },
         {
           "name": "USA_Housing.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "07 - Regression",
           "path": "Data Science programming/07 - Regression/data/USA_Housing.csv",
@@ -4077,10 +4307,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/USA_Housing.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/USA_Housing.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/USA_Housing.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/USA_Housing.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "bikeshare.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "07 - Regression",
           "path": "Data Science programming/07 - Regression/data/bikeshare.csv",
@@ -4158,10 +4402,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/bikeshare.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/bikeshare.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/bikeshare.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/bikeshare.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "climate_precip.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "03 - Pandas",
           "path": "Data Science programming/03 - Pandas/data/climate_precip.csv",
@@ -4329,10 +4587,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_precip.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_precip.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_precip.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_precip.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "rose",
+          "cleaning_level": "Crítica",
+          "cleaning_reasons": [
+            "Miles de valores centinela ocultos (-9999) correspondientes a datos ausentes de NOAA",
+            "Columna DATE codificada como entero sin parsear a datetime"
+          ],
+          "cleaning_actions": [
+            "Reemplazar valores <= -9999 por np.nan",
+            "Parsear la columna DATE mediante pd.to_datetime()"
+          ]
         },
         {
           "name": "climate_temp.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "03 - Pandas",
           "path": "Data Science programming/03 - Pandas/data/climate_temp.csv",
@@ -4460,10 +4732,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_temp.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_temp.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_temp.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_temp.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "rose",
+          "cleaning_level": "Crítica",
+          "cleaning_reasons": [
+            "Decenas de miles de valores centinela ocultos (-7777) en grados-día de refrigeración y calefacción",
+            "Columna DATE codificada como entero"
+          ],
+          "cleaning_actions": [
+            "Reemplazar valores <= -7777 por np.nan",
+            "Convertir DATE a tipo datetime"
+          ]
         },
         {
           "name": "winemag-data-130k-v2.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "03 - Pandas",
           "path": "Data Science programming/03 - Pandas/data/winemag-data-130k-v2.csv",
@@ -4556,10 +4842,25 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/winemag-data-130k-v2.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/winemag-data-130k-v2.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/winemag-data-130k-v2.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/winemag-data-130k-v2.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "rose",
+          "cleaning_level": "Crítica",
+          "cleaning_reasons": [
+            "204,752 celdas nulas (11.25% del dataset) en 9 columnas (region_2: 79k, designation: 37k, price: 8.9k)",
+            "Columna residual de índice serializado 'Unnamed: 0'"
+          ],
+          "cleaning_actions": [
+            "Eliminar columna residual 'Unnamed: 0'",
+            "Imputar precios o descartar filas sin precio para modelado",
+            "Gestionar valores nulos en regiones vitivinícolas"
+          ]
         },
         {
           "name": "hepatitis.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "05 - Data Preparation",
           "path": "Data Science programming/05 - Data Preparation/data/hepatitis.csv",
@@ -4682,10 +4983,23 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/hepatitis.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/hepatitis.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/hepatitis.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/hepatitis.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "rose",
+          "cleaning_level": "Crítica",
+          "cleaning_reasons": [
+            "167 valores nulos repartidos en 15 variables clínicas clave (protime con 43% de nulos)"
+          ],
+          "cleaning_actions": [
+            "Imputar variables numéricas y categóricas clínicas",
+            "Evaluar descarte de protime por alta ausencia"
+          ]
         },
         {
           "name": "landslide-events.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "05 - Data Preparation",
           "path": "Data Science programming/05 - Data Preparation/data/landslide-events.csv",
@@ -4823,10 +5137,25 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/landslide-events.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/landslide-events.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/landslide-events.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/landslide-events.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "rose",
+          "cleaning_level": "Crítica",
+          "cleaning_reasons": [
+            "7,658 valores nulos (19.67% de celdas) en 18 columnas",
+            "Variables con >90% de ausencia (storm_name: 92%, continent_code: 90%)",
+            "Formatos de hora y descripción desestructurados"
+          ],
+          "cleaning_actions": [
+            "Descartar columnas con más de 80% de ausencia",
+            "Estandarizar formatos temporales y geográficos"
+          ]
         },
         {
           "name": "pakistan_intellectual_capital.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "05 - Data Preparation",
           "path": "Data Science programming/05 - Data Preparation/data/pakistan_intellectual_capital.csv",
@@ -4914,10 +5243,25 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/pakistan_intellectual_capital.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/pakistan_intellectual_capital.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/pakistan_intellectual_capital.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/pakistan_intellectual_capital.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "rose",
+          "cleaning_level": "Crítica",
+          "cleaning_reasons": [
+            "2,213 valores nulos (14.91% de celdas) en 5 columnas",
+            "Columna parásita de índice 'Unnamed: 0'",
+            "Texto abierto no normalizado con inconsistencias tipográficas"
+          ],
+          "cleaning_actions": [
+            "Eliminar 'Unnamed: 0'",
+            "Normalizar cadenas mediante expresiones regulares y fuzzy matching"
+          ]
         },
         {
           "name": "StudentsPerformance.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "04 - EDA",
           "path": "Data Science programming/04 - EDA/data/StudentsPerformance.csv",
@@ -4980,10 +5324,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/StudentsPerformance.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/StudentsPerformance.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/StudentsPerformance.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/StudentsPerformance.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "quartets.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "04 - EDA",
           "path": "Data Science programming/04 - EDA/data/quartets.csv",
@@ -5026,10 +5384,97 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/quartets.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/quartets.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/quartets.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/quartets.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "amber",
+          "cleaning_level": "Menor",
+          "cleaning_reasons": [
+            "Columna parásita de índice residual 'Unnamed: 0'"
+          ],
+          "cleaning_actions": [
+            "Cargar con index_col=0 o eliminar la columna 'Unnamed: 0'"
+          ]
+        },
+        {
+          "name": "USA_Housing.csv",
+          "format": "CSV",
+          "course_name": "Data Science Programming",
+          "module": "09 - Decision Trees",
+          "path": "Data Science programming/09 - Decision Trees/data/USA_Housing.csv",
+          "rows": 5001,
+          "cols": 7,
+          "target": "Address",
+          "features": "Avg. Area Income, Avg. Area House Age, Avg. Area Number of Rooms, Avg. Area Number of Bedrooms, Area Population",
+          "description": "Dataset oficial de práctica para 09 - Decision Trees (Data Science Programming).",
+          "sample_data": [
+            {
+              "Avg. Area Income": "79545.45857431678",
+              "Avg. Area House Age": "5.682861321615587",
+              "Avg. Area Number of Rooms": "7.009188142792237",
+              "Avg. Area Number of Bedrooms": "4.09",
+              "Area Population": "23086.800502686456",
+              "Price": "1059033.5578701235",
+              "Address": "208 Michael Ferry Apt. 674\nLaurabury, NE 37010-5101"
+            },
+            {
+              "Avg. Area Income": "79248.64245482568",
+              "Avg. Area House Age": "6.0028998082752425",
+              "Avg. Area Number of Rooms": "6.730821019094919",
+              "Avg. Area Number of Bedrooms": "3.09",
+              "Area Population": "40173.07217364482",
+              "Price": "1505890.91484695",
+              "Address": "188 Johnson Views Suite 079\nLake Kathleen, CA 48958"
+            },
+            {
+              "Avg. Area Income": "61287.067178656784",
+              "Avg. Area House Age": "5.865889840310001",
+              "Avg. Area Number of Rooms": "8.512727430375099",
+              "Avg. Area Number of Bedrooms": "5.13",
+              "Area Population": "36882.15939970458",
+              "Price": "1058987.9878760849",
+              "Address": "9127 Elizabeth Stravenue\nDanieltown, WI 06482-3489"
+            },
+            {
+              "Avg. Area Income": "63345.24004622798",
+              "Avg. Area House Age": "7.1882360945186425",
+              "Avg. Area Number of Rooms": "5.586728664827653",
+              "Avg. Area Number of Bedrooms": "3.26",
+              "Area Population": "34310.24283090706",
+              "Price": "1260616.8066294468",
+              "Address": "USS Barnett\nFPO AP 44820"
+            },
+            {
+              "Avg. Area Income": "59982.197225708034",
+              "Avg. Area House Age": "5.040554523106283",
+              "Avg. Area Number of Rooms": "7.839387785120487",
+              "Avg. Area Number of Bedrooms": "4.23",
+              "Area Population": "26354.109472103148",
+              "Price": "630943.4893385402",
+              "Address": "USNS Raymond\nFPO AE 09386"
+            }
+          ],
+          "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/USA_Housing.csv",
+          "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/USA_Housing.csv",
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/USA_Housing.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "spam.csv",
+          "format": "CSV",
           "course_name": "Data Science Programming",
           "module": "09 - Decision Trees",
           "path": "Data Science programming/09 - Decision Trees/data/spam.csv",
@@ -5107,7 +5552,19 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/spam.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/spam.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/spam.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/spam.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "amber",
+          "cleaning_level": "Media",
+          "cleaning_reasons": [
+            "391 filas duplicadas exactas (8.50% de los registros)",
+            "Riesgo de fuga de datos (data leakage) y sobreajuste en modelos supervisados"
+          ],
+          "cleaning_actions": [
+            "Desduplicar el conjunto de datos mediante drop_duplicates() antes del modelado"
+          ]
         }
       ],
       "guias": [
@@ -5557,7 +6014,7 @@ export const CATALOG_DATA = {
         "total_dummies_notebooks": 78,
         "total_modules": 11,
         "total_homeworks": 18,
-        "total_datasets": 24,
+        "total_datasets": 27,
         "total_guias": 2,
         "total_videos": 2,
         "total_books": 11
@@ -7252,6 +7709,7 @@ export const CATALOG_DATA = {
       "datasets": [
         {
           "name": "auditoria_calidad_datos.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "00 - Introduccion al Data Mining",
           "path": "Data Mining/00 - Introduccion al Data Mining/data/auditoria_calidad_datos.csv",
@@ -7304,10 +7762,26 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/auditoria_calidad_datos.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/auditoria_calidad_datos.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/auditoria_calidad_datos.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/auditoria_calidad_datos.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "rose",
+          "cleaning_level": "Crítica",
+          "cleaning_reasons": [
+            "150 valores nulos en 4 columnas (edad, ingreso_mensual, ciudad, cliente_activo)",
+            "25 registros duplicados (2.04% de las filas)",
+            "Valores incoherentes: 15 edades negativas, ingresos y gastos negativos"
+          ],
+          "cleaning_actions": [
+            "Imputar o descartar valores nulos",
+            "Eliminar registros duplicados",
+            "Corregir signos negativos o filtrar registros inválidos"
+          ]
         },
         {
           "name": "proyectos_mineria_negocio.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "00 - Introduccion al Data Mining",
           "path": "Data Mining/00 - Introduccion al Data Mining/data/proyectos_mineria_negocio.csv",
@@ -7350,10 +7824,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/proyectos_mineria_negocio.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/proyectos_mineria_negocio.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/proyectos_mineria_negocio.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/proyectos_mineria_negocio.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "clientes_segmentacion_compleja.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
           "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/clientes_segmentacion_compleja.csv",
@@ -7416,10 +7904,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/clientes_segmentacion_compleja.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/clientes_segmentacion_compleja.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/clientes_segmentacion_compleja.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/clientes_segmentacion_compleja.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "diagnostico_celular.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
           "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/diagnostico_celular.csv",
@@ -7487,10 +7989,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/diagnostico_celular.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/diagnostico_celular.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/diagnostico_celular.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/diagnostico_celular.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "geometria_lunas.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
           "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/geometria_lunas.csv",
@@ -7528,10 +8044,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/geometria_lunas.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/geometria_lunas.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/geometria_lunas.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/geometria_lunas.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "rendimiento_industrial_no_lineal.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
           "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/rendimiento_industrial_no_lineal.csv",
@@ -7584,10 +8114,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/rendimiento_industrial_no_lineal.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/rendimiento_industrial_no_lineal.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/rendimiento_industrial_no_lineal.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/rendimiento_industrial_no_lineal.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "sensores_maquinaria.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
           "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/sensores_maquinaria.csv",
@@ -7645,10 +8189,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/sensores_maquinaria.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/sensores_maquinaria.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/sensores_maquinaria.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/sensores_maquinaria.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "abandono_clientes_telecom.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "04 - Arboles de Decision y Bosques Aleatorios",
           "path": "Data Mining/04 - Arboles de Decision y Bosques Aleatorios/data/abandono_clientes_telecom.csv",
@@ -7706,10 +8264,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/04%20-%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/abandono_clientes_telecom.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/04%20-%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/abandono_clientes_telecom.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/04%20-%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/abandono_clientes_telecom.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/04%20-%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/abandono_clientes_telecom.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "dataset_crudo_preprocesamiento.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "01 - Preprocesamiento de los Datos",
           "path": "Data Mining/01 - Preprocesamiento de los Datos/data/dataset_crudo_preprocesamiento.csv",
@@ -7772,10 +8344,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/01%20-%20Preprocesamiento%20de%20los%20Datos/data/dataset_crudo_preprocesamiento.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/01%20-%20Preprocesamiento%20de%20los%20Datos/data/dataset_crudo_preprocesamiento.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/01%20-%20Preprocesamiento%20de%20los%20Datos/data/dataset_crudo_preprocesamiento.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/01%20-%20Preprocesamiento%20de%20los%20Datos/data/dataset_crudo_preprocesamiento.csv')",
+          "requires_cleaning": true,
+          "cleaning_status": "Requiere Limpieza",
+          "cleaning_badge": "Requiere Limpieza",
+          "cleaning_badge_color": "rose",
+          "cleaning_level": "Crítica",
+          "cleaning_reasons": [
+            "501 valores nulos (3.13% de celdas) distribuidos en 6 columnas",
+            "16 registros con edad negativa"
+          ],
+          "cleaning_actions": [
+            "Aplicar estrategias de imputación multivariada",
+            "Tratar o corregir edades negativas"
+          ]
         },
         {
           "name": "logs_transacciones_masivo.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "07 - Mineria de Datos con Big Data",
           "path": "Data Mining/07 - Mineria de Datos con Big Data/data/logs_transacciones_masivo.csv",
@@ -7838,10 +8424,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/07%20-%20Mineria%20de%20Datos%20con%20Big%20Data/data/logs_transacciones_masivo.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/07%20-%20Mineria%20de%20Datos%20con%20Big%20Data/data/logs_transacciones_masivo.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/07%20-%20Mineria%20de%20Datos%20con%20Big%20Data/data/logs_transacciones_masivo.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/07%20-%20Mineria%20de%20Datos%20con%20Big%20Data/data/logs_transacciones_masivo.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "riesgo_credito_benchmark.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "05 - Comparacion de Arboles de Decision y Bosques Aleatorios",
           "path": "Data Mining/05 - Comparacion de Arboles de Decision y Bosques Aleatorios/data/riesgo_credito_benchmark.csv",
@@ -7929,10 +8529,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/05%20-%20Comparacion%20de%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/riesgo_credito_benchmark.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/05%20-%20Comparacion%20de%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/riesgo_credito_benchmark.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/05%20-%20Comparacion%20de%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/riesgo_credito_benchmark.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/05%20-%20Comparacion%20de%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/riesgo_credito_benchmark.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "clientes_credito.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "02 - Clasificacion y Regresion",
           "path": "Data Mining/02 - Clasificacion y Regresion/data/clientes_credito.csv",
@@ -7990,10 +8604,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/clientes_credito.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/clientes_credito.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/clientes_credito.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/clientes_credito.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "inmuebles_precios.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "02 - Clasificacion y Regresion",
           "path": "Data Mining/02 - Clasificacion y Regresion/data/inmuebles_precios.csv",
@@ -8051,10 +8679,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/inmuebles_precios.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/inmuebles_precios.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/inmuebles_precios.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/inmuebles_precios.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "transacciones_fraude.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "02 - Clasificacion y Regresion",
           "path": "Data Mining/02 - Clasificacion y Regresion/data/transacciones_fraude.csv",
@@ -8097,10 +8739,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/transacciones_fraude.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/transacciones_fraude.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/transacciones_fraude.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/transacciones_fraude.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "segmentacion_clientes_tienda.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "03 - Clustering y Mineria Reglas de Asociacion",
           "path": "Data Mining/03 - Clustering y Mineria Reglas de Asociacion/data/segmentacion_clientes_tienda.csv",
@@ -8148,10 +8804,24 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/segmentacion_clientes_tienda.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/segmentacion_clientes_tienda.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/segmentacion_clientes_tienda.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/segmentacion_clientes_tienda.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         },
         {
           "name": "transacciones_supermercado.csv",
+          "format": "CSV",
           "course_name": "Data Mining",
           "module": "03 - Clustering y Mineria Reglas de Asociacion",
           "path": "Data Mining/03 - Clustering y Mineria Reglas de Asociacion/data/transacciones_supermercado.csv",
@@ -8184,7 +8854,20 @@ export const CATALOG_DATA = {
           ],
           "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/transacciones_supermercado.csv",
           "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/transacciones_supermercado.csv",
-          "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/transacciones_supermercado.csv')"
+          "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/transacciones_supermercado.csv')",
+          "requires_cleaning": false,
+          "cleaning_status": "No Requiere Limpieza",
+          "cleaning_badge": "Limpio",
+          "cleaning_badge_color": "emerald",
+          "cleaning_level": "Óptima",
+          "cleaning_reasons": [
+            "0 valores nulos",
+            "0 registros duplicados",
+            "Tipos de datos y rangos válidos"
+          ],
+          "cleaning_actions": [
+            "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+          ]
         }
       ],
       "guias": [],
@@ -8833,12 +9516,1734 @@ export const CATALOG_DATA = {
       "color": "#8b5cf6",
       "gradient": "from-violet-500/20 via-purple-600/10 to-transparent",
       "border_glow": "border-violet-500/40",
-      "description": "Algoritmos de clasificación supervisada, ensambles avanzados (Random Forest, XGBoost, LightGBM, CatBoost), clustering no supervisado y optimización de hiperparámetros.",
+      "description": "Aprendizaje supervisado (modelos lineales, árboles, Random Forests y redes neuronales), no supervisado (clustering y reducción de dimensionalidad), por refuerzo, selección de modelos, optimización de hiperparámetros y aplicaciones en visión, NLP y recomendación.",
       "level": "Especialización",
       "semester": "Semestre II",
       "active": true,
-      "modules": [],
-      "notebooks": [],
+      "modules": [
+        {
+          "id": "00",
+          "name": "00 - Introduccion al Machine Learning",
+          "title": "Introducción al Machine Learning",
+          "icon": "🧭",
+          "color": "#6366f1",
+          "description": "Definición de Mitchell, paradigmas de aprendizaje, tipos de problema, ciclo de vida de un proyecto e importancia del preprocesamiento y la fuga de datos."
+        },
+        {
+          "id": "01",
+          "name": "01 - Modelos Lineales Supervisados",
+          "title": "Modelos Lineales Supervisados",
+          "icon": "📈",
+          "color": "#0ea5e9",
+          "description": "Riesgo empírico, descomposición sesgo-varianza, regresión lineal (ecuación normal y gradiente) y regresión logística (entropía cruzada, softmax) desde cero."
+        },
+        {
+          "id": "02",
+          "name": "02 - Arboles Bosques y Redes Neuronales",
+          "title": "Árboles, Bosques y Redes Neuronales",
+          "icon": "🌲",
+          "color": "#10b981",
+          "description": "CART desde cero, poda por complejidad, bagging y Random Forests, retropropagación y perceptrón multicapa en NumPy y PyTorch."
+        },
+        {
+          "id": "03",
+          "name": "03 - Metricas y Ajuste de Hiperparametros",
+          "title": "Métricas y Ajuste de Hiperparámetros",
+          "icon": "🎯",
+          "color": "#ec4899",
+          "description": "Matriz de confusión, precision/recall/F1, ROC-AUC, MSE y familia, validación cruzada y GridSearch implementados desde cero."
+        },
+        {
+          "id": "04",
+          "name": "04 - Clustering No Supervisado",
+          "title": "Clustering No Supervisado",
+          "icon": "🔮",
+          "color": "#8b5cf6",
+          "description": "K-Means (Lloyd y k-means++), clustering jerárquico, DBSCAN y métricas de validación: Silhouette, Calinski-Harabasz y DBCV."
+        },
+        {
+          "id": "05",
+          "name": "05 - Reduccion de Dimensionalidad",
+          "title": "Reducción de Dimensionalidad",
+          "icon": "🗜️",
+          "color": "#14b8a6",
+          "description": "PCA (autovalores y SVD), t-SNE exacto, Isomap y aprendizaje de variedades, con trustworthiness y continuity."
+        },
+        {
+          "id": "06",
+          "name": "06 - Aprendizaje por Refuerzo",
+          "title": "Aprendizaje por Refuerzo",
+          "icon": "🕹️",
+          "color": "#f43f5e",
+          "description": "MDPs, ecuaciones de Bellman, Q-learning y SARSA, gradientes de política, DQN y REINFORCE con Gymnasium y PyTorch."
+        },
+        {
+          "id": "07",
+          "name": "07 - Seleccion de Modelos y Optimizacion",
+          "title": "Selección de Modelos y Optimización",
+          "icon": "⚖️",
+          "color": "#f59e0b",
+          "description": "Comparación estadística de modelos, calibración, validación cruzada anidada, Random Search y optimización bayesiana de hiperparámetros."
+        },
+        {
+          "id": "08",
+          "name": "08 - Temas Avanzados de ML",
+          "title": "Temas Avanzados de Machine Learning",
+          "icon": "🔬",
+          "color": "#3b82f6",
+          "description": "Dataset shift, transfer learning, explicabilidad (Shapley, LIME, gradientes integrados), datasets desbalanceados con SMOTE y datos faltantes."
+        },
+        {
+          "id": "09",
+          "name": "09 - Casos de Estudio y Aplicaciones",
+          "title": "Casos de Estudio y Aplicaciones",
+          "icon": "💼",
+          "color": "#eab308",
+          "description": "Proyecto integrador de ML, visión por computador, procesamiento de lenguaje natural y sistemas de recomendación."
+        },
+        {
+          "id": "hw",
+          "name": "homeworks",
+          "title": "Talleres Prácticos Evaluativos (Hands-On)",
+          "icon": "📝",
+          "color": "#dc2626",
+          "description": "Un taller por módulo, con edición estándar y Para Dummies: retos con autoverificación, rúbrica y checklist de entrega."
+        }
+      ],
+      "notebooks": [
+        {
+          "id": "00_00_Introduccion_y_Panorama_del_ML",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "00",
+          "module_name": "00 - Introduccion al Machine Learning",
+          "filename": "00_Introduccion_y_Panorama_del_ML.ipynb",
+          "title": "Introduccion y Panorama del Ml 🧭",
+          "path": "Machine Learning/00 - Introduccion al Machine Learning/00_Introduccion_y_Panorama_del_ML.ipynb",
+          "difficulty": "Básico",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/00_Introduccion_y_Panorama_del_ML.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/00_Introduccion_y_Panorama_del_ML.ipynb"
+        },
+        {
+          "id": "00_01_Paradigmas_de_Aprendizaje",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "00",
+          "module_name": "00 - Introduccion al Machine Learning",
+          "filename": "01_Paradigmas_de_Aprendizaje.ipynb",
+          "title": "Paradigmas de Aprendizaje 🧭",
+          "path": "Machine Learning/00 - Introduccion al Machine Learning/01_Paradigmas_de_Aprendizaje.ipynb",
+          "difficulty": "Básico",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/01_Paradigmas_de_Aprendizaje.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/01_Paradigmas_de_Aprendizaje.ipynb"
+        },
+        {
+          "id": "00_02_Tipos_de_Problemas_en_ML",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "00",
+          "module_name": "00 - Introduccion al Machine Learning",
+          "filename": "02_Tipos_de_Problemas_en_ML.ipynb",
+          "title": "Tipos de Problemas en Ml 🧭",
+          "path": "Machine Learning/00 - Introduccion al Machine Learning/02_Tipos_de_Problemas_en_ML.ipynb",
+          "difficulty": "Básico",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/02_Tipos_de_Problemas_en_ML.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/02_Tipos_de_Problemas_en_ML.ipynb"
+        },
+        {
+          "id": "00_03_Importancia_del_Preprocesamiento",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "00",
+          "module_name": "00 - Introduccion al Machine Learning",
+          "filename": "03_Importancia_del_Preprocesamiento.ipynb",
+          "title": "Importancia del Preprocesamiento 🧭",
+          "path": "Machine Learning/00 - Introduccion al Machine Learning/03_Importancia_del_Preprocesamiento.ipynb",
+          "difficulty": "Básico",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/03_Importancia_del_Preprocesamiento.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/03_Importancia_del_Preprocesamiento.ipynb"
+        },
+        {
+          "id": "00_00_Introduccion_ML_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "00",
+          "module_name": "00 - Introduccion al Machine Learning",
+          "filename": "00_Introduccion_ML_Dummies.ipynb",
+          "title": "💡 Introduccion Ml [Dummies] 🧭",
+          "path": "Machine Learning/00 - Introduccion al Machine Learning/Para Dummies/00_Introduccion_ML_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/Para%20Dummies/00_Introduccion_ML_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/Para%20Dummies/00_Introduccion_ML_Dummies.ipynb"
+        },
+        {
+          "id": "00_01_Paradigmas_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "00",
+          "module_name": "00 - Introduccion al Machine Learning",
+          "filename": "01_Paradigmas_Dummies.ipynb",
+          "title": "💡 Paradigmas [Dummies] 🧭",
+          "path": "Machine Learning/00 - Introduccion al Machine Learning/Para Dummies/01_Paradigmas_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/Para%20Dummies/01_Paradigmas_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/Para%20Dummies/01_Paradigmas_Dummies.ipynb"
+        },
+        {
+          "id": "00_02_Tipos_de_Problemas_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "00",
+          "module_name": "00 - Introduccion al Machine Learning",
+          "filename": "02_Tipos_de_Problemas_Dummies.ipynb",
+          "title": "💡 Tipos de Problemas [Dummies] 🧭",
+          "path": "Machine Learning/00 - Introduccion al Machine Learning/Para Dummies/02_Tipos_de_Problemas_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/Para%20Dummies/02_Tipos_de_Problemas_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/Para%20Dummies/02_Tipos_de_Problemas_Dummies.ipynb"
+        },
+        {
+          "id": "00_03_Preprocesamiento_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "00",
+          "module_name": "00 - Introduccion al Machine Learning",
+          "filename": "03_Preprocesamiento_Dummies.ipynb",
+          "title": "💡 Preprocesamiento [Dummies] 🧭",
+          "path": "Machine Learning/00 - Introduccion al Machine Learning/Para Dummies/03_Preprocesamiento_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/Para%20Dummies/03_Preprocesamiento_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/00%20-%20Introduccion%20al%20Machine%20Learning/Para%20Dummies/03_Preprocesamiento_Dummies.ipynb"
+        },
+        {
+          "id": "01_00_Fundamentos_del_Aprendizaje_Supervisado",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "01",
+          "module_name": "01 - Modelos Lineales Supervisados",
+          "filename": "00_Fundamentos_del_Aprendizaje_Supervisado.ipynb",
+          "title": "Fundamentos del Aprendizaje Supervisado 📈",
+          "path": "Machine Learning/01 - Modelos Lineales Supervisados/00_Fundamentos_del_Aprendizaje_Supervisado.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/00_Fundamentos_del_Aprendizaje_Supervisado.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/00_Fundamentos_del_Aprendizaje_Supervisado.ipynb"
+        },
+        {
+          "id": "01_01_Regresion_Lineal",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "01",
+          "module_name": "01 - Modelos Lineales Supervisados",
+          "filename": "01_Regresion_Lineal.ipynb",
+          "title": "Regresion Lineal 📈",
+          "path": "Machine Learning/01 - Modelos Lineales Supervisados/01_Regresion_Lineal.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/01_Regresion_Lineal.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/01_Regresion_Lineal.ipynb"
+        },
+        {
+          "id": "01_02_Regresion_Logistica",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "01",
+          "module_name": "01 - Modelos Lineales Supervisados",
+          "filename": "02_Regresion_Logistica.ipynb",
+          "title": "Regresion Logistica 📈",
+          "path": "Machine Learning/01 - Modelos Lineales Supervisados/02_Regresion_Logistica.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/02_Regresion_Logistica.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/02_Regresion_Logistica.ipynb"
+        },
+        {
+          "id": "01_00_Fundamentos_Supervisado_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "01",
+          "module_name": "01 - Modelos Lineales Supervisados",
+          "filename": "00_Fundamentos_Supervisado_Dummies.ipynb",
+          "title": "💡 Fundamentos Supervisado [Dummies] 📈",
+          "path": "Machine Learning/01 - Modelos Lineales Supervisados/Para Dummies/00_Fundamentos_Supervisado_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/Para%20Dummies/00_Fundamentos_Supervisado_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/Para%20Dummies/00_Fundamentos_Supervisado_Dummies.ipynb"
+        },
+        {
+          "id": "01_01_Regresion_Lineal_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "01",
+          "module_name": "01 - Modelos Lineales Supervisados",
+          "filename": "01_Regresion_Lineal_Dummies.ipynb",
+          "title": "💡 Regresion Lineal [Dummies] 📈",
+          "path": "Machine Learning/01 - Modelos Lineales Supervisados/Para Dummies/01_Regresion_Lineal_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/Para%20Dummies/01_Regresion_Lineal_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/Para%20Dummies/01_Regresion_Lineal_Dummies.ipynb"
+        },
+        {
+          "id": "01_02_Regresion_Logistica_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "01",
+          "module_name": "01 - Modelos Lineales Supervisados",
+          "filename": "02_Regresion_Logistica_Dummies.ipynb",
+          "title": "💡 Regresion Logistica [Dummies] 📈",
+          "path": "Machine Learning/01 - Modelos Lineales Supervisados/Para Dummies/02_Regresion_Logistica_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/Para%20Dummies/02_Regresion_Logistica_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/01%20-%20Modelos%20Lineales%20Supervisados/Para%20Dummies/02_Regresion_Logistica_Dummies.ipynb"
+        },
+        {
+          "id": "02_00_Arboles_de_Decision",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "02",
+          "module_name": "02 - Arboles Bosques y Redes Neuronales",
+          "filename": "00_Arboles_de_Decision.ipynb",
+          "title": "Arboles de Decision 🌲",
+          "path": "Machine Learning/02 - Arboles Bosques y Redes Neuronales/00_Arboles_de_Decision.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/00_Arboles_de_Decision.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/00_Arboles_de_Decision.ipynb"
+        },
+        {
+          "id": "02_01_Random_Forests",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "02",
+          "module_name": "02 - Arboles Bosques y Redes Neuronales",
+          "filename": "01_Random_Forests.ipynb",
+          "title": "Random Forests 🌲",
+          "path": "Machine Learning/02 - Arboles Bosques y Redes Neuronales/01_Random_Forests.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/01_Random_Forests.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/01_Random_Forests.ipynb"
+        },
+        {
+          "id": "02_02_Redes_Neuronales",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "02",
+          "module_name": "02 - Arboles Bosques y Redes Neuronales",
+          "filename": "02_Redes_Neuronales.ipynb",
+          "title": "Redes Neuronales 🌲",
+          "path": "Machine Learning/02 - Arboles Bosques y Redes Neuronales/02_Redes_Neuronales.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/02_Redes_Neuronales.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/02_Redes_Neuronales.ipynb"
+        },
+        {
+          "id": "02_00_Arboles_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "02",
+          "module_name": "02 - Arboles Bosques y Redes Neuronales",
+          "filename": "00_Arboles_Dummies.ipynb",
+          "title": "💡 Arboles [Dummies] 🌲",
+          "path": "Machine Learning/02 - Arboles Bosques y Redes Neuronales/Para Dummies/00_Arboles_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/Para%20Dummies/00_Arboles_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/Para%20Dummies/00_Arboles_Dummies.ipynb"
+        },
+        {
+          "id": "02_01_Random_Forests_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "02",
+          "module_name": "02 - Arboles Bosques y Redes Neuronales",
+          "filename": "01_Random_Forests_Dummies.ipynb",
+          "title": "💡 Random Forests [Dummies] 🌲",
+          "path": "Machine Learning/02 - Arboles Bosques y Redes Neuronales/Para Dummies/01_Random_Forests_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/Para%20Dummies/01_Random_Forests_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/Para%20Dummies/01_Random_Forests_Dummies.ipynb"
+        },
+        {
+          "id": "02_02_Redes_Neuronales_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "02",
+          "module_name": "02 - Arboles Bosques y Redes Neuronales",
+          "filename": "02_Redes_Neuronales_Dummies.ipynb",
+          "title": "💡 Redes Neuronales [Dummies] 🌲",
+          "path": "Machine Learning/02 - Arboles Bosques y Redes Neuronales/Para Dummies/02_Redes_Neuronales_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/Para%20Dummies/02_Redes_Neuronales_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/02%20-%20Arboles%20Bosques%20y%20Redes%20Neuronales/Para%20Dummies/02_Redes_Neuronales_Dummies.ipynb"
+        },
+        {
+          "id": "03_00_Metricas_de_Clasificacion",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "03",
+          "module_name": "03 - Metricas y Ajuste de Hiperparametros",
+          "filename": "00_Metricas_de_Clasificacion.ipynb",
+          "title": "Metricas de Clasificacion 🎯",
+          "path": "Machine Learning/03 - Metricas y Ajuste de Hiperparametros/00_Metricas_de_Clasificacion.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/00_Metricas_de_Clasificacion.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/00_Metricas_de_Clasificacion.ipynb"
+        },
+        {
+          "id": "03_01_Metricas_de_Regresion",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "03",
+          "module_name": "03 - Metricas y Ajuste de Hiperparametros",
+          "filename": "01_Metricas_de_Regresion.ipynb",
+          "title": "Metricas de Regresion 🎯",
+          "path": "Machine Learning/03 - Metricas y Ajuste de Hiperparametros/01_Metricas_de_Regresion.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/01_Metricas_de_Regresion.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/01_Metricas_de_Regresion.ipynb"
+        },
+        {
+          "id": "03_02_Validacion_Cruzada_y_GridSearch",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "03",
+          "module_name": "03 - Metricas y Ajuste de Hiperparametros",
+          "filename": "02_Validacion_Cruzada_y_GridSearch.ipynb",
+          "title": "Validacion Cruzada y Gridsearch 🎯",
+          "path": "Machine Learning/03 - Metricas y Ajuste de Hiperparametros/02_Validacion_Cruzada_y_GridSearch.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/02_Validacion_Cruzada_y_GridSearch.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/02_Validacion_Cruzada_y_GridSearch.ipynb"
+        },
+        {
+          "id": "03_00_Metricas_Clasificacion_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "03",
+          "module_name": "03 - Metricas y Ajuste de Hiperparametros",
+          "filename": "00_Metricas_Clasificacion_Dummies.ipynb",
+          "title": "💡 Metricas Clasificacion [Dummies] 🎯",
+          "path": "Machine Learning/03 - Metricas y Ajuste de Hiperparametros/Para Dummies/00_Metricas_Clasificacion_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/Para%20Dummies/00_Metricas_Clasificacion_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/Para%20Dummies/00_Metricas_Clasificacion_Dummies.ipynb"
+        },
+        {
+          "id": "03_01_Metricas_Regresion_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "03",
+          "module_name": "03 - Metricas y Ajuste de Hiperparametros",
+          "filename": "01_Metricas_Regresion_Dummies.ipynb",
+          "title": "💡 Metricas Regresion [Dummies] 🎯",
+          "path": "Machine Learning/03 - Metricas y Ajuste de Hiperparametros/Para Dummies/01_Metricas_Regresion_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/Para%20Dummies/01_Metricas_Regresion_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/Para%20Dummies/01_Metricas_Regresion_Dummies.ipynb"
+        },
+        {
+          "id": "03_02_Validacion_Cruzada_GridSearch_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "03",
+          "module_name": "03 - Metricas y Ajuste de Hiperparametros",
+          "filename": "02_Validacion_Cruzada_GridSearch_Dummies.ipynb",
+          "title": "💡 Validacion Cruzada Gridsearch [Dummies] 🎯",
+          "path": "Machine Learning/03 - Metricas y Ajuste de Hiperparametros/Para Dummies/02_Validacion_Cruzada_GridSearch_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/Para%20Dummies/02_Validacion_Cruzada_GridSearch_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/03%20-%20Metricas%20y%20Ajuste%20de%20Hiperparametros/Para%20Dummies/02_Validacion_Cruzada_GridSearch_Dummies.ipynb"
+        },
+        {
+          "id": "04_00_Introduccion_Cap2_y_No_Supervisado",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "00_Introduccion_Cap2_y_No_Supervisado.ipynb",
+          "title": "Introduccion Cap2 y No Supervisado 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/00_Introduccion_Cap2_y_No_Supervisado.ipynb",
+          "difficulty": "Básico",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/00_Introduccion_Cap2_y_No_Supervisado.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/00_Introduccion_Cap2_y_No_Supervisado.ipynb"
+        },
+        {
+          "id": "04_01_KMeans",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "01_KMeans.ipynb",
+          "title": "Kmeans 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/01_KMeans.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/01_KMeans.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/01_KMeans.ipynb"
+        },
+        {
+          "id": "04_02_Clustering_Jerarquico",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "02_Clustering_Jerarquico.ipynb",
+          "title": "Clustering Jerarquico 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/02_Clustering_Jerarquico.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/02_Clustering_Jerarquico.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/02_Clustering_Jerarquico.ipynb"
+        },
+        {
+          "id": "04_03_DBSCAN",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "03_DBSCAN.ipynb",
+          "title": "Dbscan 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/03_DBSCAN.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/03_DBSCAN.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/03_DBSCAN.ipynb"
+        },
+        {
+          "id": "04_04_Metricas_de_Clustering",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "04_Metricas_de_Clustering.ipynb",
+          "title": "Metricas de Clustering 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/04_Metricas_de_Clustering.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/04_Metricas_de_Clustering.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/04_Metricas_de_Clustering.ipynb"
+        },
+        {
+          "id": "04_00_Introduccion_No_Supervisado_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "00_Introduccion_No_Supervisado_Dummies.ipynb",
+          "title": "💡 Introduccion No Supervisado [Dummies] 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/Para Dummies/00_Introduccion_No_Supervisado_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/00_Introduccion_No_Supervisado_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/00_Introduccion_No_Supervisado_Dummies.ipynb"
+        },
+        {
+          "id": "04_01_KMeans_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "01_KMeans_Dummies.ipynb",
+          "title": "💡 Kmeans [Dummies] 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/Para Dummies/01_KMeans_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/01_KMeans_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/01_KMeans_Dummies.ipynb"
+        },
+        {
+          "id": "04_02_Jerarquico_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "02_Jerarquico_Dummies.ipynb",
+          "title": "💡 Jerarquico [Dummies] 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/Para Dummies/02_Jerarquico_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/02_Jerarquico_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/02_Jerarquico_Dummies.ipynb"
+        },
+        {
+          "id": "04_03_DBSCAN_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "03_DBSCAN_Dummies.ipynb",
+          "title": "💡 Dbscan [Dummies] 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/Para Dummies/03_DBSCAN_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/03_DBSCAN_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/03_DBSCAN_Dummies.ipynb"
+        },
+        {
+          "id": "04_04_Metricas_Clustering_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "04",
+          "module_name": "04 - Clustering No Supervisado",
+          "filename": "04_Metricas_Clustering_Dummies.ipynb",
+          "title": "💡 Metricas Clustering [Dummies] 🔮",
+          "path": "Machine Learning/04 - Clustering No Supervisado/Para Dummies/04_Metricas_Clustering_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/04_Metricas_Clustering_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/04%20-%20Clustering%20No%20Supervisado/Para%20Dummies/04_Metricas_Clustering_Dummies.ipynb"
+        },
+        {
+          "id": "05_00_PCA",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "05",
+          "module_name": "05 - Reduccion de Dimensionalidad",
+          "filename": "00_PCA.ipynb",
+          "title": "PCA 🗜️",
+          "path": "Machine Learning/05 - Reduccion de Dimensionalidad/00_PCA.ipynb",
+          "difficulty": "Avanzado",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/00_PCA.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/00_PCA.ipynb"
+        },
+        {
+          "id": "05_01_tSNE",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "05",
+          "module_name": "05 - Reduccion de Dimensionalidad",
+          "filename": "01_tSNE.ipynb",
+          "title": "Tsne 🗜️",
+          "path": "Machine Learning/05 - Reduccion de Dimensionalidad/01_tSNE.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/01_tSNE.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/01_tSNE.ipynb"
+        },
+        {
+          "id": "05_02_Isomap_y_Variedades",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "05",
+          "module_name": "05 - Reduccion de Dimensionalidad",
+          "filename": "02_Isomap_y_Variedades.ipynb",
+          "title": "Isomap y Variedades 🗜️",
+          "path": "Machine Learning/05 - Reduccion de Dimensionalidad/02_Isomap_y_Variedades.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/02_Isomap_y_Variedades.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/02_Isomap_y_Variedades.ipynb"
+        },
+        {
+          "id": "05_00_PCA_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "05",
+          "module_name": "05 - Reduccion de Dimensionalidad",
+          "filename": "00_PCA_Dummies.ipynb",
+          "title": "💡 PCA [Dummies] 🗜️",
+          "path": "Machine Learning/05 - Reduccion de Dimensionalidad/Para Dummies/00_PCA_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/Para%20Dummies/00_PCA_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/Para%20Dummies/00_PCA_Dummies.ipynb"
+        },
+        {
+          "id": "05_01_tSNE_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "05",
+          "module_name": "05 - Reduccion de Dimensionalidad",
+          "filename": "01_tSNE_Dummies.ipynb",
+          "title": "💡 Tsne [Dummies] 🗜️",
+          "path": "Machine Learning/05 - Reduccion de Dimensionalidad/Para Dummies/01_tSNE_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/Para%20Dummies/01_tSNE_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/Para%20Dummies/01_tSNE_Dummies.ipynb"
+        },
+        {
+          "id": "05_02_Isomap_Variedades_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "05",
+          "module_name": "05 - Reduccion de Dimensionalidad",
+          "filename": "02_Isomap_Variedades_Dummies.ipynb",
+          "title": "💡 Isomap Variedades [Dummies] 🗜️",
+          "path": "Machine Learning/05 - Reduccion de Dimensionalidad/Para Dummies/02_Isomap_Variedades_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/Para%20Dummies/02_Isomap_Variedades_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/05%20-%20Reduccion%20de%20Dimensionalidad/Para%20Dummies/02_Isomap_Variedades_Dummies.ipynb"
+        },
+        {
+          "id": "06_00_Fundamentos_RL_y_MDPs",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "06",
+          "module_name": "06 - Aprendizaje por Refuerzo",
+          "filename": "00_Fundamentos_RL_y_MDPs.ipynb",
+          "title": "Fundamentos Rl y Mdps 🕹️",
+          "path": "Machine Learning/06 - Aprendizaje por Refuerzo/00_Fundamentos_RL_y_MDPs.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/00_Fundamentos_RL_y_MDPs.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/00_Fundamentos_RL_y_MDPs.ipynb"
+        },
+        {
+          "id": "06_01_Funciones_de_Valor_y_Q_Learning",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "06",
+          "module_name": "06 - Aprendizaje por Refuerzo",
+          "filename": "01_Funciones_de_Valor_y_Q_Learning.ipynb",
+          "title": "Funciones de Valor y Q Learning 🕹️",
+          "path": "Machine Learning/06 - Aprendizaje por Refuerzo/01_Funciones_de_Valor_y_Q_Learning.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/01_Funciones_de_Valor_y_Q_Learning.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/01_Funciones_de_Valor_y_Q_Learning.ipynb"
+        },
+        {
+          "id": "06_02_Gradientes_de_Politica",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "06",
+          "module_name": "06 - Aprendizaje por Refuerzo",
+          "filename": "02_Gradientes_de_Politica.ipynb",
+          "title": "Gradientes de Politica 🕹️",
+          "path": "Machine Learning/06 - Aprendizaje por Refuerzo/02_Gradientes_de_Politica.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/02_Gradientes_de_Politica.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/02_Gradientes_de_Politica.ipynb"
+        },
+        {
+          "id": "06_03_Deep_RL_DQN_y_Policy_Gradient",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "06",
+          "module_name": "06 - Aprendizaje por Refuerzo",
+          "filename": "03_Deep_RL_DQN_y_Policy_Gradient.ipynb",
+          "title": "Deep Rl Dqn y Policy Gradient 🕹️",
+          "path": "Machine Learning/06 - Aprendizaje por Refuerzo/03_Deep_RL_DQN_y_Policy_Gradient.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/03_Deep_RL_DQN_y_Policy_Gradient.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/03_Deep_RL_DQN_y_Policy_Gradient.ipynb"
+        },
+        {
+          "id": "06_00_RL_y_MDPs_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "06",
+          "module_name": "06 - Aprendizaje por Refuerzo",
+          "filename": "00_RL_y_MDPs_Dummies.ipynb",
+          "title": "💡 Rl y Mdps [Dummies] 🕹️",
+          "path": "Machine Learning/06 - Aprendizaje por Refuerzo/Para Dummies/00_RL_y_MDPs_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/Para%20Dummies/00_RL_y_MDPs_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/Para%20Dummies/00_RL_y_MDPs_Dummies.ipynb"
+        },
+        {
+          "id": "06_01_Valor_y_QLearning_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "06",
+          "module_name": "06 - Aprendizaje por Refuerzo",
+          "filename": "01_Valor_y_QLearning_Dummies.ipynb",
+          "title": "💡 Valor y Qlearning [Dummies] 🕹️",
+          "path": "Machine Learning/06 - Aprendizaje por Refuerzo/Para Dummies/01_Valor_y_QLearning_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/Para%20Dummies/01_Valor_y_QLearning_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/Para%20Dummies/01_Valor_y_QLearning_Dummies.ipynb"
+        },
+        {
+          "id": "06_02_Gradientes_de_Politica_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "06",
+          "module_name": "06 - Aprendizaje por Refuerzo",
+          "filename": "02_Gradientes_de_Politica_Dummies.ipynb",
+          "title": "💡 Gradientes de Politica [Dummies] 🕹️",
+          "path": "Machine Learning/06 - Aprendizaje por Refuerzo/Para Dummies/02_Gradientes_de_Politica_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/Para%20Dummies/02_Gradientes_de_Politica_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/Para%20Dummies/02_Gradientes_de_Politica_Dummies.ipynb"
+        },
+        {
+          "id": "06_03_Deep_RL_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "06",
+          "module_name": "06 - Aprendizaje por Refuerzo",
+          "filename": "03_Deep_RL_Dummies.ipynb",
+          "title": "💡 Deep Rl [Dummies] 🕹️",
+          "path": "Machine Learning/06 - Aprendizaje por Refuerzo/Para Dummies/03_Deep_RL_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/Para%20Dummies/03_Deep_RL_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/06%20-%20Aprendizaje%20por%20Refuerzo/Para%20Dummies/03_Deep_RL_Dummies.ipynb"
+        },
+        {
+          "id": "07_00_Evaluacion_y_Seleccion_de_Modelos",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "07",
+          "module_name": "07 - Seleccion de Modelos y Optimizacion",
+          "filename": "00_Evaluacion_y_Seleccion_de_Modelos.ipynb",
+          "title": "Evaluacion y Seleccion de Modelos ⚖️",
+          "path": "Machine Learning/07 - Seleccion de Modelos y Optimizacion/00_Evaluacion_y_Seleccion_de_Modelos.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/00_Evaluacion_y_Seleccion_de_Modelos.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/00_Evaluacion_y_Seleccion_de_Modelos.ipynb"
+        },
+        {
+          "id": "07_01_Validacion_Cruzada_Avanzada",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "07",
+          "module_name": "07 - Seleccion de Modelos y Optimizacion",
+          "filename": "01_Validacion_Cruzada_Avanzada.ipynb",
+          "title": "Validacion Cruzada Avanzada ⚖️",
+          "path": "Machine Learning/07 - Seleccion de Modelos y Optimizacion/01_Validacion_Cruzada_Avanzada.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/01_Validacion_Cruzada_Avanzada.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/01_Validacion_Cruzada_Avanzada.ipynb"
+        },
+        {
+          "id": "07_02_Random_Search_y_GridSearch",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "07",
+          "module_name": "07 - Seleccion de Modelos y Optimizacion",
+          "filename": "02_Random_Search_y_GridSearch.ipynb",
+          "title": "Random Search y Gridsearch ⚖️",
+          "path": "Machine Learning/07 - Seleccion de Modelos y Optimizacion/02_Random_Search_y_GridSearch.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/02_Random_Search_y_GridSearch.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/02_Random_Search_y_GridSearch.ipynb"
+        },
+        {
+          "id": "07_03_Optimizacion_Bayesiana",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "07",
+          "module_name": "07 - Seleccion de Modelos y Optimizacion",
+          "filename": "03_Optimizacion_Bayesiana.ipynb",
+          "title": "Optimizacion Bayesiana ⚖️",
+          "path": "Machine Learning/07 - Seleccion de Modelos y Optimizacion/03_Optimizacion_Bayesiana.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/03_Optimizacion_Bayesiana.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/03_Optimizacion_Bayesiana.ipynb"
+        },
+        {
+          "id": "07_00_Evaluacion_Seleccion_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "07",
+          "module_name": "07 - Seleccion de Modelos y Optimizacion",
+          "filename": "00_Evaluacion_Seleccion_Dummies.ipynb",
+          "title": "💡 Evaluacion Seleccion [Dummies] ⚖️",
+          "path": "Machine Learning/07 - Seleccion de Modelos y Optimizacion/Para Dummies/00_Evaluacion_Seleccion_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/Para%20Dummies/00_Evaluacion_Seleccion_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/Para%20Dummies/00_Evaluacion_Seleccion_Dummies.ipynb"
+        },
+        {
+          "id": "07_01_Validacion_Cruzada_Avanzada_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "07",
+          "module_name": "07 - Seleccion de Modelos y Optimizacion",
+          "filename": "01_Validacion_Cruzada_Avanzada_Dummies.ipynb",
+          "title": "💡 Validacion Cruzada Avanzada [Dummies] ⚖️",
+          "path": "Machine Learning/07 - Seleccion de Modelos y Optimizacion/Para Dummies/01_Validacion_Cruzada_Avanzada_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/Para%20Dummies/01_Validacion_Cruzada_Avanzada_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/Para%20Dummies/01_Validacion_Cruzada_Avanzada_Dummies.ipynb"
+        },
+        {
+          "id": "07_02_Random_Grid_Search_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "07",
+          "module_name": "07 - Seleccion de Modelos y Optimizacion",
+          "filename": "02_Random_Grid_Search_Dummies.ipynb",
+          "title": "💡 Random Grid Search [Dummies] ⚖️",
+          "path": "Machine Learning/07 - Seleccion de Modelos y Optimizacion/Para Dummies/02_Random_Grid_Search_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/Para%20Dummies/02_Random_Grid_Search_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/Para%20Dummies/02_Random_Grid_Search_Dummies.ipynb"
+        },
+        {
+          "id": "07_03_Optimizacion_Bayesiana_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "07",
+          "module_name": "07 - Seleccion de Modelos y Optimizacion",
+          "filename": "03_Optimizacion_Bayesiana_Dummies.ipynb",
+          "title": "💡 Optimizacion Bayesiana [Dummies] ⚖️",
+          "path": "Machine Learning/07 - Seleccion de Modelos y Optimizacion/Para Dummies/03_Optimizacion_Bayesiana_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/Para%20Dummies/03_Optimizacion_Bayesiana_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/07%20-%20Seleccion%20de%20Modelos%20y%20Optimizacion/Para%20Dummies/03_Optimizacion_Bayesiana_Dummies.ipynb"
+        },
+        {
+          "id": "08_00_Introduccion_Cap3_y_Conceptos_Avanzados",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "00_Introduccion_Cap3_y_Conceptos_Avanzados.ipynb",
+          "title": "Introduccion Cap3 y Conceptos Avanzados 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/00_Introduccion_Cap3_y_Conceptos_Avanzados.ipynb",
+          "difficulty": "Básico",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/00_Introduccion_Cap3_y_Conceptos_Avanzados.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/00_Introduccion_Cap3_y_Conceptos_Avanzados.ipynb"
+        },
+        {
+          "id": "08_01_Transfer_Learning_y_Fine_Tuning",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "01_Transfer_Learning_y_Fine_Tuning.ipynb",
+          "title": "Transfer Learning y Fine Tuning 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/01_Transfer_Learning_y_Fine_Tuning.ipynb",
+          "difficulty": "Avanzado",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/01_Transfer_Learning_y_Fine_Tuning.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/01_Transfer_Learning_y_Fine_Tuning.ipynb"
+        },
+        {
+          "id": "08_02_Explicabilidad_de_Modelos",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "02_Explicabilidad_de_Modelos.ipynb",
+          "title": "Explicabilidad de Modelos 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/02_Explicabilidad_de_Modelos.ipynb",
+          "difficulty": "Avanzado",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/02_Explicabilidad_de_Modelos.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/02_Explicabilidad_de_Modelos.ipynb"
+        },
+        {
+          "id": "08_03_Datasets_Desbalanceados",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "03_Datasets_Desbalanceados.ipynb",
+          "title": "Datasets Desbalanceados 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/03_Datasets_Desbalanceados.ipynb",
+          "difficulty": "Avanzado",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/03_Datasets_Desbalanceados.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/03_Datasets_Desbalanceados.ipynb"
+        },
+        {
+          "id": "08_04_Datos_Faltantes",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "04_Datos_Faltantes.ipynb",
+          "title": "Datos Faltantes 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/04_Datos_Faltantes.ipynb",
+          "difficulty": "Avanzado",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/04_Datos_Faltantes.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/04_Datos_Faltantes.ipynb"
+        },
+        {
+          "id": "08_00_Introduccion_Cap3_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "00_Introduccion_Cap3_Dummies.ipynb",
+          "title": "💡 Introduccion Cap3 [Dummies] 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/Para Dummies/00_Introduccion_Cap3_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/00_Introduccion_Cap3_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/00_Introduccion_Cap3_Dummies.ipynb"
+        },
+        {
+          "id": "08_01_Transfer_Learning_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "01_Transfer_Learning_Dummies.ipynb",
+          "title": "💡 Transfer Learning [Dummies] 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/Para Dummies/01_Transfer_Learning_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/01_Transfer_Learning_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/01_Transfer_Learning_Dummies.ipynb"
+        },
+        {
+          "id": "08_02_Explicabilidad_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "02_Explicabilidad_Dummies.ipynb",
+          "title": "💡 Explicabilidad [Dummies] 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/Para Dummies/02_Explicabilidad_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/02_Explicabilidad_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/02_Explicabilidad_Dummies.ipynb"
+        },
+        {
+          "id": "08_03_Desbalanceados_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "03_Desbalanceados_Dummies.ipynb",
+          "title": "💡 Desbalanceados [Dummies] 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/Para Dummies/03_Desbalanceados_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/03_Desbalanceados_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/03_Desbalanceados_Dummies.ipynb"
+        },
+        {
+          "id": "08_04_Datos_Faltantes_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "08",
+          "module_name": "08 - Temas Avanzados de ML",
+          "filename": "04_Datos_Faltantes_Dummies.ipynb",
+          "title": "💡 Datos Faltantes [Dummies] 🔬",
+          "path": "Machine Learning/08 - Temas Avanzados de ML/Para Dummies/04_Datos_Faltantes_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/04_Datos_Faltantes_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/08%20-%20Temas%20Avanzados%20de%20ML/Para%20Dummies/04_Datos_Faltantes_Dummies.ipynb"
+        },
+        {
+          "id": "09_00_Casos_de_Estudio_y_Aplicaciones",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "09",
+          "module_name": "09 - Casos de Estudio y Aplicaciones",
+          "filename": "00_Casos_de_Estudio_y_Aplicaciones.ipynb",
+          "title": "Casos de Estudio y Aplicaciones 💼",
+          "path": "Machine Learning/09 - Casos de Estudio y Aplicaciones/00_Casos_de_Estudio_y_Aplicaciones.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/00_Casos_de_Estudio_y_Aplicaciones.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/00_Casos_de_Estudio_y_Aplicaciones.ipynb"
+        },
+        {
+          "id": "09_01_Vision_por_Computador",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "09",
+          "module_name": "09 - Casos de Estudio y Aplicaciones",
+          "filename": "01_Vision_por_Computador.ipynb",
+          "title": "Vision por Computador 💼",
+          "path": "Machine Learning/09 - Casos de Estudio y Aplicaciones/01_Vision_por_Computador.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/01_Vision_por_Computador.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/01_Vision_por_Computador.ipynb"
+        },
+        {
+          "id": "09_02_Procesamiento_de_Lenguaje_Natural",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "09",
+          "module_name": "09 - Casos de Estudio y Aplicaciones",
+          "filename": "02_Procesamiento_de_Lenguaje_Natural.ipynb",
+          "title": "Procesamiento de Lenguaje Natural 💼",
+          "path": "Machine Learning/09 - Casos de Estudio y Aplicaciones/02_Procesamiento_de_Lenguaje_Natural.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/02_Procesamiento_de_Lenguaje_Natural.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/02_Procesamiento_de_Lenguaje_Natural.ipynb"
+        },
+        {
+          "id": "09_03_Sistemas_de_Recomendacion",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "09",
+          "module_name": "09 - Casos de Estudio y Aplicaciones",
+          "filename": "03_Sistemas_de_Recomendacion.ipynb",
+          "title": "Sistemas de Recomendacion 💼",
+          "path": "Machine Learning/09 - Casos de Estudio y Aplicaciones/03_Sistemas_de_Recomendacion.ipynb",
+          "difficulty": "Intermedio",
+          "is_dummies": false,
+          "is_homework": false,
+          "edition": "Estándar",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/03_Sistemas_de_Recomendacion.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/03_Sistemas_de_Recomendacion.ipynb"
+        },
+        {
+          "id": "09_00_Casos_Estudio_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "09",
+          "module_name": "09 - Casos de Estudio y Aplicaciones",
+          "filename": "00_Casos_Estudio_Dummies.ipynb",
+          "title": "💡 Casos Estudio [Dummies] 💼",
+          "path": "Machine Learning/09 - Casos de Estudio y Aplicaciones/Para Dummies/00_Casos_Estudio_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Introducción",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/Para%20Dummies/00_Casos_Estudio_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/Para%20Dummies/00_Casos_Estudio_Dummies.ipynb"
+        },
+        {
+          "id": "09_01_Vision_Computador_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "09",
+          "module_name": "09 - Casos de Estudio y Aplicaciones",
+          "filename": "01_Vision_Computador_Dummies.ipynb",
+          "title": "💡 Vision Computador [Dummies] 💼",
+          "path": "Machine Learning/09 - Casos de Estudio y Aplicaciones/Para Dummies/01_Vision_Computador_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/Para%20Dummies/01_Vision_Computador_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/Para%20Dummies/01_Vision_Computador_Dummies.ipynb"
+        },
+        {
+          "id": "09_02_NLP_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "09",
+          "module_name": "09 - Casos de Estudio y Aplicaciones",
+          "filename": "02_NLP_Dummies.ipynb",
+          "title": "💡 NLP [Dummies] 💼",
+          "path": "Machine Learning/09 - Casos de Estudio y Aplicaciones/Para Dummies/02_NLP_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/Para%20Dummies/02_NLP_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/Para%20Dummies/02_NLP_Dummies.ipynb"
+        },
+        {
+          "id": "09_03_Recomendacion_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "09",
+          "module_name": "09 - Casos de Estudio y Aplicaciones",
+          "filename": "03_Recomendacion_Dummies.ipynb",
+          "title": "💡 Recomendacion [Dummies] 💼",
+          "path": "Machine Learning/09 - Casos de Estudio y Aplicaciones/Para Dummies/03_Recomendacion_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": false,
+          "edition": "Para Dummies",
+          "type": "Teoría y Práctica",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/Para%20Dummies/03_Recomendacion_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/09%20-%20Casos%20de%20Estudio%20y%20Aplicaciones/Para%20Dummies/03_Recomendacion_Dummies.ipynb"
+        },
+        {
+          "id": "hw_00_Introduccion_ML_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "00_Introduccion_ML_Hands_On.ipynb",
+          "title": "📝 Introduccion Ml Hands On 📝",
+          "path": "Machine Learning/homeworks/00_Introduccion_ML_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/00_Introduccion_ML_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/00_Introduccion_ML_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_01_Modelos_Lineales_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "01_Modelos_Lineales_Hands_On.ipynb",
+          "title": "📝 Modelos Lineales Hands On 📝",
+          "path": "Machine Learning/homeworks/01_Modelos_Lineales_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/01_Modelos_Lineales_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/01_Modelos_Lineales_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_02_Arboles_Bosques_Redes_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "02_Arboles_Bosques_Redes_Hands_On.ipynb",
+          "title": "📝 Arboles Bosques Redes Hands On 📝",
+          "path": "Machine Learning/homeworks/02_Arboles_Bosques_Redes_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/02_Arboles_Bosques_Redes_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/02_Arboles_Bosques_Redes_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_03_Metricas_y_Ajuste_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "03_Metricas_y_Ajuste_Hands_On.ipynb",
+          "title": "📝 Metricas y Ajuste Hands On 📝",
+          "path": "Machine Learning/homeworks/03_Metricas_y_Ajuste_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/03_Metricas_y_Ajuste_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/03_Metricas_y_Ajuste_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_04_Clustering_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "04_Clustering_Hands_On.ipynb",
+          "title": "📝 Clustering Hands On 📝",
+          "path": "Machine Learning/homeworks/04_Clustering_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/04_Clustering_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/04_Clustering_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_05_Reduccion_Dimensionalidad_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "05_Reduccion_Dimensionalidad_Hands_On.ipynb",
+          "title": "📝 Reduccion Dimensionalidad Hands On 📝",
+          "path": "Machine Learning/homeworks/05_Reduccion_Dimensionalidad_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/05_Reduccion_Dimensionalidad_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/05_Reduccion_Dimensionalidad_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_06_Aprendizaje_por_Refuerzo_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "06_Aprendizaje_por_Refuerzo_Hands_On.ipynb",
+          "title": "📝 Aprendizaje por Refuerzo Hands On 📝",
+          "path": "Machine Learning/homeworks/06_Aprendizaje_por_Refuerzo_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/06_Aprendizaje_por_Refuerzo_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/06_Aprendizaje_por_Refuerzo_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_07_Seleccion_Modelos_Optimizacion_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "07_Seleccion_Modelos_Optimizacion_Hands_On.ipynb",
+          "title": "📝 Seleccion Modelos Optimizacion Hands On 📝",
+          "path": "Machine Learning/homeworks/07_Seleccion_Modelos_Optimizacion_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/07_Seleccion_Modelos_Optimizacion_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/07_Seleccion_Modelos_Optimizacion_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_08_Temas_Avanzados_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "08_Temas_Avanzados_Hands_On.ipynb",
+          "title": "📝 Temas Avanzados Hands On 📝",
+          "path": "Machine Learning/homeworks/08_Temas_Avanzados_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/08_Temas_Avanzados_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/08_Temas_Avanzados_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_09_Casos_Estudio_Aplicaciones_Hands_On",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "09_Casos_Estudio_Aplicaciones_Hands_On.ipynb",
+          "title": "📝 Casos Estudio Aplicaciones Hands On 📝",
+          "path": "Machine Learning/homeworks/09_Casos_Estudio_Aplicaciones_Hands_On.ipynb",
+          "difficulty": "Intermedio (Hands-On)",
+          "is_dummies": false,
+          "is_homework": true,
+          "edition": "Taller Evaluativo",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/09_Casos_Estudio_Aplicaciones_Hands_On.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/09_Casos_Estudio_Aplicaciones_Hands_On.ipynb"
+        },
+        {
+          "id": "hw_00_Introduccion_ML_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "00_Introduccion_ML_Hands_On_Dummies.ipynb",
+          "title": "💡 Introduccion Ml Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/00_Introduccion_ML_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/00_Introduccion_ML_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/00_Introduccion_ML_Hands_On_Dummies.ipynb"
+        },
+        {
+          "id": "hw_01_Modelos_Lineales_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "01_Modelos_Lineales_Hands_On_Dummies.ipynb",
+          "title": "💡 Modelos Lineales Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/01_Modelos_Lineales_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/01_Modelos_Lineales_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/01_Modelos_Lineales_Hands_On_Dummies.ipynb"
+        },
+        {
+          "id": "hw_02_Arboles_Bosques_Redes_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "02_Arboles_Bosques_Redes_Hands_On_Dummies.ipynb",
+          "title": "💡 Arboles Bosques Redes Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/02_Arboles_Bosques_Redes_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/02_Arboles_Bosques_Redes_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/02_Arboles_Bosques_Redes_Hands_On_Dummies.ipynb"
+        },
+        {
+          "id": "hw_03_Metricas_y_Ajuste_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "03_Metricas_y_Ajuste_Hands_On_Dummies.ipynb",
+          "title": "💡 Metricas y Ajuste Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/03_Metricas_y_Ajuste_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/03_Metricas_y_Ajuste_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/03_Metricas_y_Ajuste_Hands_On_Dummies.ipynb"
+        },
+        {
+          "id": "hw_04_Clustering_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "04_Clustering_Hands_On_Dummies.ipynb",
+          "title": "💡 Clustering Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/04_Clustering_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/04_Clustering_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/04_Clustering_Hands_On_Dummies.ipynb"
+        },
+        {
+          "id": "hw_05_Reduccion_Dimensionalidad_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "05_Reduccion_Dimensionalidad_Hands_On_Dummies.ipynb",
+          "title": "💡 Reduccion Dimensionalidad Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/05_Reduccion_Dimensionalidad_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/05_Reduccion_Dimensionalidad_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/05_Reduccion_Dimensionalidad_Hands_On_Dummies.ipynb"
+        },
+        {
+          "id": "hw_06_Aprendizaje_por_Refuerzo_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "06_Aprendizaje_por_Refuerzo_Hands_On_Dummies.ipynb",
+          "title": "💡 Aprendizaje por Refuerzo Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/06_Aprendizaje_por_Refuerzo_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/06_Aprendizaje_por_Refuerzo_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/06_Aprendizaje_por_Refuerzo_Hands_On_Dummies.ipynb"
+        },
+        {
+          "id": "hw_07_Seleccion_Modelos_Optimizacion_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "07_Seleccion_Modelos_Optimizacion_Hands_On_Dummies.ipynb",
+          "title": "💡 Seleccion Modelos Optimizacion Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/07_Seleccion_Modelos_Optimizacion_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/07_Seleccion_Modelos_Optimizacion_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/07_Seleccion_Modelos_Optimizacion_Hands_On_Dummies.ipynb"
+        },
+        {
+          "id": "hw_08_Temas_Avanzados_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "08_Temas_Avanzados_Hands_On_Dummies.ipynb",
+          "title": "💡 Temas Avanzados Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/08_Temas_Avanzados_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/08_Temas_Avanzados_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/08_Temas_Avanzados_Hands_On_Dummies.ipynb"
+        },
+        {
+          "id": "hw_09_Casos_Estudio_Aplicaciones_Hands_On_Dummies",
+          "course_name": "Machine Learning",
+          "course_folder": "Machine Learning",
+          "module_id": "hw",
+          "module_name": "homeworks",
+          "filename": "09_Casos_Estudio_Aplicaciones_Hands_On_Dummies.ipynb",
+          "title": "💡 Casos Estudio Aplicaciones Hands On [Dummies] 📝",
+          "path": "Machine Learning/homeworks/Para Dummies/09_Casos_Estudio_Aplicaciones_Hands_On_Dummies.ipynb",
+          "difficulty": "Básico (Dummies)",
+          "is_dummies": true,
+          "is_homework": true,
+          "edition": "Para Dummies",
+          "type": "Taller Evaluativo",
+          "colab_url": "https://colab.research.google.com/github/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/09_Casos_Estudio_Aplicaciones_Hands_On_Dummies.ipynb",
+          "github_url": "https://github.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/blob/main/Machine%20Learning/homeworks/Para%20Dummies/09_Casos_Estudio_Aplicaciones_Hands_On_Dummies.ipynb"
+        }
+      ],
       "datasets": [],
       "guias": [],
       "videos": [],
@@ -10210,11 +12615,11 @@ export const CATALOG_DATA = {
         }
       ],
       "stats": {
-        "total_notebooks": 0,
-        "total_standard_notebooks": 0,
-        "total_dummies_notebooks": 0,
-        "total_modules": 0,
-        "total_homeworks": 0,
+        "total_notebooks": 96,
+        "total_standard_notebooks": 48,
+        "total_dummies_notebooks": 48,
+        "total_modules": 10,
+        "total_homeworks": 20,
         "total_datasets": 0,
         "total_guias": 0,
         "total_videos": 0,
@@ -16708,6 +19113,7 @@ export const CATALOG_DATA = {
   "datasets": [
     {
       "name": "mall_customers.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "10 - Clustering",
       "path": "Data Science programming/10 - Clustering/data/mall_customers.csv",
@@ -16755,10 +19161,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/10%20-%20Clustering/data/mall_customers.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/10%20-%20Clustering/data/mall_customers.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/10%20-%20Clustering/data/mall_customers.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/10%20-%20Clustering/data/mall_customers.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "accidents.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "06 - Feature Engineering",
       "path": "Data Science programming/06 - Feature Engineering/data/accidents.csv",
@@ -16926,10 +19346,22 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/accidents.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/accidents.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/accidents.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/accidents.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "amber",
+      "cleaning_level": "Menor",
+      "cleaning_reasons": [
+        "25 registros exactamente idénticos en todas las características"
+      ],
+      "cleaning_actions": [
+        "Eliminar registros duplicados mediante drop_duplicates()"
+      ]
     },
     {
       "name": "autos.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "06 - Feature Engineering",
       "path": "Data Science programming/06 - Feature Engineering/data/autos.csv",
@@ -17077,10 +19509,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/autos.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/autos.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/autos.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/autos.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "concrete.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "06 - Feature Engineering",
       "path": "Data Science programming/06 - Feature Engineering/data/concrete.csv",
@@ -17148,10 +19594,22 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/concrete.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/concrete.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/concrete.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/concrete.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "amber",
+      "cleaning_level": "Media",
+      "cleaning_reasons": [
+        "25 formulaciones de mezclas de hormigón exactamente duplicadas (2.43%)"
+      ],
+      "cleaning_actions": [
+        "Eliminar formulaciones repetidas o calcular agregación de resistencia"
+      ]
     },
     {
       "name": "customer.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "06 - Feature Engineering",
       "path": "Data Science programming/06 - Feature Engineering/data/customer.csv",
@@ -17299,10 +19757,22 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/customer.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/customer.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/customer.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/customer.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "amber",
+      "cleaning_level": "Menor",
+      "cleaning_reasons": [
+        "Columna parásita de índice residual 'Unnamed: 0'"
+      ],
+      "cleaning_actions": [
+        "Eliminar la columna residual mediante drop(columns=['Unnamed: 0']) o index_col=0"
+      ]
     },
     {
       "name": "melb_data.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "06 - Feature Engineering",
       "path": "Data Science programming/06 - Feature Engineering/data/melb_data.csv",
@@ -17430,10 +19900,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/melb_data.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/melb_data.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/melb_data.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/melb_data.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "rose",
+      "cleaning_level": "Crítica",
+      "cleaning_reasons": [
+        "13,256 valores nulos en atributos clave de tasación (BuildingArea: 47.5% nulos, YearBuilt: 39.6% nulos)",
+        "Valores nulos en CouncilArea y Car"
+      ],
+      "cleaning_actions": [
+        "Imputar BuildingArea y YearBuilt por tipo y zona",
+        "Crear variables indicadoras binarias de ausencia (missing indicators)"
+      ]
     },
     {
       "name": "movielens1m.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "06 - Feature Engineering",
       "path": "Data Science programming/06 - Feature Engineering/data/movielens1m.csv",
@@ -17596,10 +20080,23 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/movielens1m.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/movielens1m.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/movielens1m.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/06%20-%20Feature%20Engineering/data/movielens1m.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "amber",
+      "cleaning_level": "Media",
+      "cleaning_reasons": [
+        "Serialización errónea de bytes literales b'...' en columnas Movie ID y Zipcode"
+      ],
+      "cleaning_actions": [
+        "Sanitizar cadenas eliminando prefijo b' y comillas simples",
+        "Convertir Movie ID a tipo entero y Zipcode a string limpio"
+      ]
     },
     {
       "name": "customer_churn.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "08 - Classification",
       "path": "Data Science programming/08 - Classification/data/customer_churn.csv",
@@ -17652,10 +20149,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/customer_churn.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/customer_churn.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/customer_churn.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/customer_churn.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "heart_disease.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "08 - Classification",
       "path": "Data Science programming/08 - Classification/data/heart_disease.csv",
@@ -17713,10 +20224,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/heart_disease.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/heart_disease.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/heart_disease.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/heart_disease.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "iris.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "08 - Classification",
       "path": "Data Science programming/08 - Classification/data/iris.csv",
@@ -17769,10 +20294,22 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/iris.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/iris.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/iris.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/08%20-%20Classification/data/iris.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "amber",
+      "cleaning_level": "Menor",
+      "cleaning_reasons": [
+        "1 fila duplicada exacta (observaciones 117 y 125, especie virginica)"
+      ],
+      "cleaning_actions": [
+        "Verificar si se desea conservar la medición natural o eliminar la fila repetida"
+      ]
     },
     {
       "name": "clientes.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "11 - Polars",
       "path": "Data Science programming/11 - Polars/data/clientes.csv",
@@ -17825,10 +20362,53 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
+    },
+    {
+      "name": "clientes.parquet",
+      "format": "Parquet",
+      "course_name": "Data Science Programming",
+      "module": "11 - Polars",
+      "path": "Data Science programming/11 - Polars/data/clientes.parquet",
+      "rows": 1500,
+      "cols": 6,
+      "target": "col2",
+      "features": "id, col1, col2",
+      "description": "Dataset oficial de práctica para 11 - Polars (Data Science Programming).",
+      "sample_data": [],
+      "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.parquet",
+      "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.parquet",
+      "snippet": "import polars as pl\ndf = pl.read_parquet('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/clientes.parquet')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "ventas.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "11 - Polars",
       "path": "Data Science programming/11 - Polars/data/ventas.csv",
@@ -17901,10 +20481,53 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
+    },
+    {
+      "name": "ventas.parquet",
+      "format": "Parquet",
+      "course_name": "Data Science Programming",
+      "module": "11 - Polars",
+      "path": "Data Science programming/11 - Polars/data/ventas.parquet",
+      "rows": 1500,
+      "cols": 6,
+      "target": "col2",
+      "features": "id, col1, col2",
+      "description": "Dataset oficial de práctica para 11 - Polars (Data Science Programming).",
+      "sample_data": [],
+      "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.parquet",
+      "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.parquet",
+      "snippet": "import polars as pl\ndf = pl.read_parquet('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/11%20-%20Polars/data/ventas.parquet')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "Advertising.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "07 - Regression",
       "path": "Data Science programming/07 - Regression/data/Advertising.csv",
@@ -17952,10 +20575,22 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/Advertising.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/Advertising.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/Advertising.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/Advertising.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "amber",
+      "cleaning_level": "Menor",
+      "cleaning_reasons": [
+        "Columna parásita de índice residual 'Unnamed: 0'"
+      ],
+      "cleaning_actions": [
+        "Eliminar la columna residual antes de entrenar modelos de regresión"
+      ]
     },
     {
       "name": "USA_Housing.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "07 - Regression",
       "path": "Data Science programming/07 - Regression/data/USA_Housing.csv",
@@ -18013,10 +20648,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/USA_Housing.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/USA_Housing.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/USA_Housing.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/USA_Housing.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "bikeshare.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "07 - Regression",
       "path": "Data Science programming/07 - Regression/data/bikeshare.csv",
@@ -18094,10 +20743,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/bikeshare.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/bikeshare.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/bikeshare.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/07%20-%20Regression/data/bikeshare.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "climate_precip.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "03 - Pandas",
       "path": "Data Science programming/03 - Pandas/data/climate_precip.csv",
@@ -18265,10 +20928,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_precip.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_precip.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_precip.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_precip.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "rose",
+      "cleaning_level": "Crítica",
+      "cleaning_reasons": [
+        "Miles de valores centinela ocultos (-9999) correspondientes a datos ausentes de NOAA",
+        "Columna DATE codificada como entero sin parsear a datetime"
+      ],
+      "cleaning_actions": [
+        "Reemplazar valores <= -9999 por np.nan",
+        "Parsear la columna DATE mediante pd.to_datetime()"
+      ]
     },
     {
       "name": "climate_temp.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "03 - Pandas",
       "path": "Data Science programming/03 - Pandas/data/climate_temp.csv",
@@ -18396,10 +21073,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_temp.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_temp.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_temp.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/climate_temp.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "rose",
+      "cleaning_level": "Crítica",
+      "cleaning_reasons": [
+        "Decenas de miles de valores centinela ocultos (-7777) en grados-día de refrigeración y calefacción",
+        "Columna DATE codificada como entero"
+      ],
+      "cleaning_actions": [
+        "Reemplazar valores <= -7777 por np.nan",
+        "Convertir DATE a tipo datetime"
+      ]
     },
     {
       "name": "winemag-data-130k-v2.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "03 - Pandas",
       "path": "Data Science programming/03 - Pandas/data/winemag-data-130k-v2.csv",
@@ -18492,10 +21183,25 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/winemag-data-130k-v2.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/winemag-data-130k-v2.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/winemag-data-130k-v2.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/03%20-%20Pandas/data/winemag-data-130k-v2.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "rose",
+      "cleaning_level": "Crítica",
+      "cleaning_reasons": [
+        "204,752 celdas nulas (11.25% del dataset) en 9 columnas (region_2: 79k, designation: 37k, price: 8.9k)",
+        "Columna residual de índice serializado 'Unnamed: 0'"
+      ],
+      "cleaning_actions": [
+        "Eliminar columna residual 'Unnamed: 0'",
+        "Imputar precios o descartar filas sin precio para modelado",
+        "Gestionar valores nulos en regiones vitivinícolas"
+      ]
     },
     {
       "name": "hepatitis.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "05 - Data Preparation",
       "path": "Data Science programming/05 - Data Preparation/data/hepatitis.csv",
@@ -18618,10 +21324,23 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/hepatitis.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/hepatitis.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/hepatitis.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/hepatitis.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "rose",
+      "cleaning_level": "Crítica",
+      "cleaning_reasons": [
+        "167 valores nulos repartidos en 15 variables clínicas clave (protime con 43% de nulos)"
+      ],
+      "cleaning_actions": [
+        "Imputar variables numéricas y categóricas clínicas",
+        "Evaluar descarte de protime por alta ausencia"
+      ]
     },
     {
       "name": "landslide-events.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "05 - Data Preparation",
       "path": "Data Science programming/05 - Data Preparation/data/landslide-events.csv",
@@ -18759,10 +21478,25 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/landslide-events.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/landslide-events.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/landslide-events.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/landslide-events.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "rose",
+      "cleaning_level": "Crítica",
+      "cleaning_reasons": [
+        "7,658 valores nulos (19.67% de celdas) en 18 columnas",
+        "Variables con >90% de ausencia (storm_name: 92%, continent_code: 90%)",
+        "Formatos de hora y descripción desestructurados"
+      ],
+      "cleaning_actions": [
+        "Descartar columnas con más de 80% de ausencia",
+        "Estandarizar formatos temporales y geográficos"
+      ]
     },
     {
       "name": "pakistan_intellectual_capital.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "05 - Data Preparation",
       "path": "Data Science programming/05 - Data Preparation/data/pakistan_intellectual_capital.csv",
@@ -18850,10 +21584,25 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/pakistan_intellectual_capital.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/pakistan_intellectual_capital.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/pakistan_intellectual_capital.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/05%20-%20Data%20Preparation/data/pakistan_intellectual_capital.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "rose",
+      "cleaning_level": "Crítica",
+      "cleaning_reasons": [
+        "2,213 valores nulos (14.91% de celdas) en 5 columnas",
+        "Columna parásita de índice 'Unnamed: 0'",
+        "Texto abierto no normalizado con inconsistencias tipográficas"
+      ],
+      "cleaning_actions": [
+        "Eliminar 'Unnamed: 0'",
+        "Normalizar cadenas mediante expresiones regulares y fuzzy matching"
+      ]
     },
     {
       "name": "StudentsPerformance.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "04 - EDA",
       "path": "Data Science programming/04 - EDA/data/StudentsPerformance.csv",
@@ -18916,10 +21665,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/StudentsPerformance.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/StudentsPerformance.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/StudentsPerformance.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/StudentsPerformance.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "quartets.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "04 - EDA",
       "path": "Data Science programming/04 - EDA/data/quartets.csv",
@@ -18962,10 +21725,97 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/quartets.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/quartets.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/quartets.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/04%20-%20EDA/data/quartets.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "amber",
+      "cleaning_level": "Menor",
+      "cleaning_reasons": [
+        "Columna parásita de índice residual 'Unnamed: 0'"
+      ],
+      "cleaning_actions": [
+        "Cargar con index_col=0 o eliminar la columna 'Unnamed: 0'"
+      ]
+    },
+    {
+      "name": "USA_Housing.csv",
+      "format": "CSV",
+      "course_name": "Data Science Programming",
+      "module": "09 - Decision Trees",
+      "path": "Data Science programming/09 - Decision Trees/data/USA_Housing.csv",
+      "rows": 5001,
+      "cols": 7,
+      "target": "Address",
+      "features": "Avg. Area Income, Avg. Area House Age, Avg. Area Number of Rooms, Avg. Area Number of Bedrooms, Area Population",
+      "description": "Dataset oficial de práctica para 09 - Decision Trees (Data Science Programming).",
+      "sample_data": [
+        {
+          "Avg. Area Income": "79545.45857431678",
+          "Avg. Area House Age": "5.682861321615587",
+          "Avg. Area Number of Rooms": "7.009188142792237",
+          "Avg. Area Number of Bedrooms": "4.09",
+          "Area Population": "23086.800502686456",
+          "Price": "1059033.5578701235",
+          "Address": "208 Michael Ferry Apt. 674\nLaurabury, NE 37010-5101"
+        },
+        {
+          "Avg. Area Income": "79248.64245482568",
+          "Avg. Area House Age": "6.0028998082752425",
+          "Avg. Area Number of Rooms": "6.730821019094919",
+          "Avg. Area Number of Bedrooms": "3.09",
+          "Area Population": "40173.07217364482",
+          "Price": "1505890.91484695",
+          "Address": "188 Johnson Views Suite 079\nLake Kathleen, CA 48958"
+        },
+        {
+          "Avg. Area Income": "61287.067178656784",
+          "Avg. Area House Age": "5.865889840310001",
+          "Avg. Area Number of Rooms": "8.512727430375099",
+          "Avg. Area Number of Bedrooms": "5.13",
+          "Area Population": "36882.15939970458",
+          "Price": "1058987.9878760849",
+          "Address": "9127 Elizabeth Stravenue\nDanieltown, WI 06482-3489"
+        },
+        {
+          "Avg. Area Income": "63345.24004622798",
+          "Avg. Area House Age": "7.1882360945186425",
+          "Avg. Area Number of Rooms": "5.586728664827653",
+          "Avg. Area Number of Bedrooms": "3.26",
+          "Area Population": "34310.24283090706",
+          "Price": "1260616.8066294468",
+          "Address": "USS Barnett\nFPO AP 44820"
+        },
+        {
+          "Avg. Area Income": "59982.197225708034",
+          "Avg. Area House Age": "5.040554523106283",
+          "Avg. Area Number of Rooms": "7.839387785120487",
+          "Avg. Area Number of Bedrooms": "4.23",
+          "Area Population": "26354.109472103148",
+          "Price": "630943.4893385402",
+          "Address": "USNS Raymond\nFPO AE 09386"
+        }
+      ],
+      "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/USA_Housing.csv",
+      "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/USA_Housing.csv",
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/USA_Housing.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "spam.csv",
+      "format": "CSV",
       "course_name": "Data Science Programming",
       "module": "09 - Decision Trees",
       "path": "Data Science programming/09 - Decision Trees/data/spam.csv",
@@ -19043,10 +21893,23 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/spam.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/spam.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/spam.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Science%20programming/09%20-%20Decision%20Trees/data/spam.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "amber",
+      "cleaning_level": "Media",
+      "cleaning_reasons": [
+        "391 filas duplicadas exactas (8.50% de los registros)",
+        "Riesgo de fuga de datos (data leakage) y sobreajuste en modelos supervisados"
+      ],
+      "cleaning_actions": [
+        "Desduplicar el conjunto de datos mediante drop_duplicates() antes del modelado"
+      ]
     },
     {
       "name": "auditoria_calidad_datos.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "00 - Introduccion al Data Mining",
       "path": "Data Mining/00 - Introduccion al Data Mining/data/auditoria_calidad_datos.csv",
@@ -19099,10 +21962,26 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/auditoria_calidad_datos.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/auditoria_calidad_datos.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/auditoria_calidad_datos.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/auditoria_calidad_datos.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "rose",
+      "cleaning_level": "Crítica",
+      "cleaning_reasons": [
+        "150 valores nulos en 4 columnas (edad, ingreso_mensual, ciudad, cliente_activo)",
+        "25 registros duplicados (2.04% de las filas)",
+        "Valores incoherentes: 15 edades negativas, ingresos y gastos negativos"
+      ],
+      "cleaning_actions": [
+        "Imputar o descartar valores nulos",
+        "Eliminar registros duplicados",
+        "Corregir signos negativos o filtrar registros inválidos"
+      ]
     },
     {
       "name": "proyectos_mineria_negocio.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "00 - Introduccion al Data Mining",
       "path": "Data Mining/00 - Introduccion al Data Mining/data/proyectos_mineria_negocio.csv",
@@ -19145,10 +22024,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/proyectos_mineria_negocio.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/proyectos_mineria_negocio.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/proyectos_mineria_negocio.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/00%20-%20Introduccion%20al%20Data%20Mining/data/proyectos_mineria_negocio.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "clientes_segmentacion_compleja.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
       "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/clientes_segmentacion_compleja.csv",
@@ -19211,10 +22104,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/clientes_segmentacion_compleja.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/clientes_segmentacion_compleja.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/clientes_segmentacion_compleja.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/clientes_segmentacion_compleja.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "diagnostico_celular.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
       "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/diagnostico_celular.csv",
@@ -19282,10 +22189,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/diagnostico_celular.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/diagnostico_celular.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/diagnostico_celular.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/diagnostico_celular.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "geometria_lunas.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
       "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/geometria_lunas.csv",
@@ -19323,10 +22244,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/geometria_lunas.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/geometria_lunas.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/geometria_lunas.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/geometria_lunas.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "rendimiento_industrial_no_lineal.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
       "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/rendimiento_industrial_no_lineal.csv",
@@ -19379,10 +22314,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/rendimiento_industrial_no_lineal.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/rendimiento_industrial_no_lineal.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/rendimiento_industrial_no_lineal.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/rendimiento_industrial_no_lineal.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "sensores_maquinaria.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "06 - Maquinas de Soporte Vectorial y Redes Neuronales",
       "path": "Data Mining/06 - Maquinas de Soporte Vectorial y Redes Neuronales/data/sensores_maquinaria.csv",
@@ -19440,10 +22389,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/sensores_maquinaria.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/sensores_maquinaria.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/sensores_maquinaria.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/06%20-%20Maquinas%20de%20Soporte%20Vectorial%20y%20Redes%20Neuronales/data/sensores_maquinaria.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "abandono_clientes_telecom.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "04 - Arboles de Decision y Bosques Aleatorios",
       "path": "Data Mining/04 - Arboles de Decision y Bosques Aleatorios/data/abandono_clientes_telecom.csv",
@@ -19501,10 +22464,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/04%20-%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/abandono_clientes_telecom.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/04%20-%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/abandono_clientes_telecom.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/04%20-%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/abandono_clientes_telecom.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/04%20-%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/abandono_clientes_telecom.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "dataset_crudo_preprocesamiento.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "01 - Preprocesamiento de los Datos",
       "path": "Data Mining/01 - Preprocesamiento de los Datos/data/dataset_crudo_preprocesamiento.csv",
@@ -19567,10 +22544,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/01%20-%20Preprocesamiento%20de%20los%20Datos/data/dataset_crudo_preprocesamiento.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/01%20-%20Preprocesamiento%20de%20los%20Datos/data/dataset_crudo_preprocesamiento.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/01%20-%20Preprocesamiento%20de%20los%20Datos/data/dataset_crudo_preprocesamiento.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/01%20-%20Preprocesamiento%20de%20los%20Datos/data/dataset_crudo_preprocesamiento.csv')",
+      "requires_cleaning": true,
+      "cleaning_status": "Requiere Limpieza",
+      "cleaning_badge": "Requiere Limpieza",
+      "cleaning_badge_color": "rose",
+      "cleaning_level": "Crítica",
+      "cleaning_reasons": [
+        "501 valores nulos (3.13% de celdas) distribuidos en 6 columnas",
+        "16 registros con edad negativa"
+      ],
+      "cleaning_actions": [
+        "Aplicar estrategias de imputación multivariada",
+        "Tratar o corregir edades negativas"
+      ]
     },
     {
       "name": "logs_transacciones_masivo.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "07 - Mineria de Datos con Big Data",
       "path": "Data Mining/07 - Mineria de Datos con Big Data/data/logs_transacciones_masivo.csv",
@@ -19633,10 +22624,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/07%20-%20Mineria%20de%20Datos%20con%20Big%20Data/data/logs_transacciones_masivo.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/07%20-%20Mineria%20de%20Datos%20con%20Big%20Data/data/logs_transacciones_masivo.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/07%20-%20Mineria%20de%20Datos%20con%20Big%20Data/data/logs_transacciones_masivo.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/07%20-%20Mineria%20de%20Datos%20con%20Big%20Data/data/logs_transacciones_masivo.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "riesgo_credito_benchmark.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "05 - Comparacion de Arboles de Decision y Bosques Aleatorios",
       "path": "Data Mining/05 - Comparacion de Arboles de Decision y Bosques Aleatorios/data/riesgo_credito_benchmark.csv",
@@ -19724,10 +22729,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/05%20-%20Comparacion%20de%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/riesgo_credito_benchmark.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/05%20-%20Comparacion%20de%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/riesgo_credito_benchmark.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/05%20-%20Comparacion%20de%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/riesgo_credito_benchmark.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/05%20-%20Comparacion%20de%20Arboles%20de%20Decision%20y%20Bosques%20Aleatorios/data/riesgo_credito_benchmark.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "clientes_credito.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "02 - Clasificacion y Regresion",
       "path": "Data Mining/02 - Clasificacion y Regresion/data/clientes_credito.csv",
@@ -19785,10 +22804,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/clientes_credito.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/clientes_credito.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/clientes_credito.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/clientes_credito.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "inmuebles_precios.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "02 - Clasificacion y Regresion",
       "path": "Data Mining/02 - Clasificacion y Regresion/data/inmuebles_precios.csv",
@@ -19846,10 +22879,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/inmuebles_precios.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/inmuebles_precios.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/inmuebles_precios.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/inmuebles_precios.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "transacciones_fraude.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "02 - Clasificacion y Regresion",
       "path": "Data Mining/02 - Clasificacion y Regresion/data/transacciones_fraude.csv",
@@ -19892,10 +22939,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/transacciones_fraude.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/transacciones_fraude.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/transacciones_fraude.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/02%20-%20Clasificacion%20y%20Regresion/data/transacciones_fraude.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "segmentacion_clientes_tienda.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "03 - Clustering y Mineria Reglas de Asociacion",
       "path": "Data Mining/03 - Clustering y Mineria Reglas de Asociacion/data/segmentacion_clientes_tienda.csv",
@@ -19943,10 +23004,24 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/segmentacion_clientes_tienda.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/segmentacion_clientes_tienda.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/segmentacion_clientes_tienda.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/segmentacion_clientes_tienda.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     },
     {
       "name": "transacciones_supermercado.csv",
+      "format": "CSV",
       "course_name": "Data Mining",
       "module": "03 - Clustering y Mineria Reglas de Asociacion",
       "path": "Data Mining/03 - Clustering y Mineria Reglas de Asociacion/data/transacciones_supermercado.csv",
@@ -19979,7 +23054,20 @@ export const CATALOG_DATA = {
       ],
       "download_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/transacciones_supermercado.csv",
       "raw_url": "https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/transacciones_supermercado.csv",
-      "snippet": "df = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/transacciones_supermercado.csv')"
+      "snippet": "import pandas as pd\ndf = pd.read_csv('https://raw.githubusercontent.com/sazuniga06/Data-Science-Programming---USTA-Tunja-Repository/main/Data%20Mining/03%20-%20Clustering%20y%20Mineria%20Reglas%20de%20Asociacion/data/transacciones_supermercado.csv')",
+      "requires_cleaning": false,
+      "cleaning_status": "No Requiere Limpieza",
+      "cleaning_badge": "Limpio",
+      "cleaning_badge_color": "emerald",
+      "cleaning_level": "Óptima",
+      "cleaning_reasons": [
+        "0 valores nulos",
+        "0 registros duplicados",
+        "Tipos de datos y rangos válidos"
+      ],
+      "cleaning_actions": [
+        "Listo para análisis y modelado predictivo sin preprocesamiento previo"
+      ]
     }
   ],
   "stats": {
@@ -19988,7 +23076,7 @@ export const CATALOG_DATA = {
     "total_dummies_notebooks": 78,
     "total_modules": 11,
     "total_homeworks": 18,
-    "total_datasets": 24,
+    "total_datasets": 27,
     "total_guias": 2,
     "total_videos": 2,
     "total_books": 11

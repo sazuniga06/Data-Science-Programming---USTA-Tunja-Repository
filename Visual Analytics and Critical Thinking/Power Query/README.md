@@ -6,6 +6,8 @@ Esta sección cubre **Power Query**, el motor ETL (Extract, Transform, Load) int
 
 > La franja verde esmeralda (`#10b981`) identifica todos los cuadernos de esta sección.
 
+> 🛠️ **Práctica:** los notebooks de esta sección (incluido el de `Para Dummies/`) incluyen secciones «🛠️ Práctica» en las que traduces transformaciones de Power Query/M a Pandas, con una solución desplegable para comparar.
+
 ---
 
 ## Estructura

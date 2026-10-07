@@ -30,6 +30,8 @@ El módulo se compone de **5 cuadernos interactivos estándar** y **5 guías com
 | [**03_DBSCAN_y_Clustering_Basado_en_Densidad.ipynb**](03_DBSCAN_y_Clustering_Basado_en_Densidad.ipynb) | [**03_DBSCAN_y_Clustering_Basado_en_Densidad_Dummies.ipynb**](Para%20Dummies/03_DBSCAN_y_Clustering_Basado_en_Densidad_Dummies.ipynb) | Densidad espacial, puntos núcleo, borde y ruido (-1), gráfico de $k$-distancias para ajuste de $\varepsilon$ y agrupamiento no convexo. |
 | [**04_Validacion_Seleccion_K_y_Benchmark_Comparativo.ipynb**](04_Validacion_Seleccion_K_y_Benchmark_Comparativo.ipynb) | [**04_Validacion_Seleccion_K_y_Benchmark_Comparativo_Dummies.ipynb**](Para%20Dummies/04_Validacion_Seleccion_K_y_Benchmark_Comparativo_Dummies.ipynb) | Coeficiente de Silueta, Davies-Bouldin, Calinski-Harabasz, método del codo, Gap Statistic y gran benchmark comparativo. |
 
+> 🛠️ Los notebooks incluyen secciones «🛠️ Práctica» con solución desplegable (`<details>`) para ponerlo a prueba tú mismo.
+
 ---
 
 ## 📂 Conjuntos de Datos (*Datasets*)

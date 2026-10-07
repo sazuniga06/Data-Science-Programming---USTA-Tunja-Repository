@@ -32,6 +32,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 2. [**01_Tecnicas_Visualizacion_Categoricos_Dummies.ipynb**](Para%20Dummies/01_Tecnicas_Visualizacion_Categoricos_Dummies.ipynb): El menú de gráficos, como pedir en un restaurante: qué visual pedir según cuántas categorías tengas.
 3. [**02_Estudios_de_Caso_Categoricos_Dummies.ipynb**](Para%20Dummies/02_Estudios_de_Caso_Categoricos_Dummies.ipynb): Dos casos de un negocio de verdad —¿quiénes son mis clientes? y ¿qué tan contentos están?— resueltos paso a paso.
 
+> 🛠️ **Práctica:** los notebooks de este módulo (incluidos los de `Para Dummies/`) incluyen secciones «🛠️ Práctica» en las que debes graficar datos categóricos con código (ordenar categorías, agrupar «Otros», calcular proporciones), con una solución desplegable para comparar.
+
 ---
 
 ## 📚 Lecturas Complementarias

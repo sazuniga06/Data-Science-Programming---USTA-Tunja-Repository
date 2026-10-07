@@ -41,6 +41,10 @@ En este módulo aprenderás a formular hipótesis, identificar patrones ocultos,
 
 ---
 
+> 🛠️ Los notebooks de este módulo incluyen secciones «🛠️ Práctica» con solución desplegable para poner a prueba lo aprendido.
+
+---
+
 ## 📂 Conjuntos de Datos (*Datasets*)
 
 En los cuadernos de este módulo se utilizan conjuntos de datos locales y de referencia:

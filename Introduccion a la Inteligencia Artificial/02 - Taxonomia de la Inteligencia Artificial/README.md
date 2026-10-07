@@ -15,6 +15,8 @@ Bienvenido al módulo de **Taxonomía de la Inteligencia Artificial** de la asig
 
 Una vez comprendido qué es la IA y de dónde viene, este módulo responde a tres preguntas de clasificación fundamentales: **¿en qué subcampos se divide la IA?** (aprendizaje automático, NLP, visión por computador, robótica, sistemas expertos, planificación e IA generativa), **¿qué tan "inteligente" es la IA que existe hoy?** (IA Débil, IA General y Superinteligencia, y la taxonomía funcional de Arend Hintze) y **¿cómo se resolvían problemas antes del aprendizaje automático?**, a través del Solucionador General de Problemas (GPS) de Newell y Simon, uno de los hitos fundacionales de la IA simbólica.
 
+> 🛠️ **Ponlo en práctica:** los cuadernos incluyen secciones **«🛠️ Práctica»**: una celda de código para que escribas tu solución y, justo debajo, la **solución guiada desplegable** (`💡 Haz clic aquí para ver la solución guiada...`). Inténtalo primero y abre la solución solo para comparar.
+
 ---
 
 ## 📚 Estructura Curricular del Módulo

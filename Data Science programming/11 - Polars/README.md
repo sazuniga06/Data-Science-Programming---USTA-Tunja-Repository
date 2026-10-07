@@ -41,6 +41,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 4. [**03_LazyFrame_Optimizador_Dummies.ipynb**](Para%20Dummies/03_LazyFrame_Optimizador_Dummies.ipynb): La pereza inteligente: planear todo antes de ejecutar para ser el más rápido de la clase.
 5. [**04_Benchmark_Pandas_vs_Polars_Dummies.ipynb**](Para%20Dummies/04_Benchmark_Pandas_vs_Polars_Dummies.ipynb): La gran carrera en vivo con cronómetro y los 3 pecados capitales a evitar.
 
+> 🛠️ Los notebooks incluyen secciones «🛠️ Práctica» (o ejercicios guiados) con solución desplegable para poner lo aprendido a prueba.
+
 ---
 
 ## 💾 Conjuntos de Datos Incluidos

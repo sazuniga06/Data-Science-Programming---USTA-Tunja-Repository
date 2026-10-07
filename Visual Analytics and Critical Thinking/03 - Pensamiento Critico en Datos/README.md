@@ -32,6 +32,8 @@ Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/):
 2. [**01_Calidad_Integridad_Datos_Dummies.ipynb**](Para%20Dummies/01_Calidad_Integridad_Datos_Dummies.ipynb): La caja de verduras del mercado — revisar qué falta, qué está repetido, qué está mal escrito y qué se ve raro.
 3. [**02_Sesgos_y_Errores_Dummies.ipynb**](Para%20Dummies/02_Sesgos_y_Errores_Dummies.ipynb): Preguntarle solo a quien ya piensa como tú, mirar solo a los que sobrevivieron, y el truco del eje cortado.
 
+> 🛠️ **Práctica:** los notebooks de este módulo (incluidos los de `Para Dummies/`) incluyen secciones «🛠️ Práctica» en las que auditas datos y gráficos con código (sesgos, calidad, ejes engañosos), con una solución desplegable para comparar.
+
 ---
 
 <div align="center">

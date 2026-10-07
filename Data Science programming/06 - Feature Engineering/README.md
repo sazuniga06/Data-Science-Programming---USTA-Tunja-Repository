@@ -13,6 +13,9 @@ La **Ingeniería de Características (*Feature Engineering*)** es el arte y la c
 
 En este módulo aprenderás las técnicas fundamentales aplicadas por los mejores equipos de ciencia de datos del mundo: codificación de variables categóricas nominales y ordinales, **Target Encoding** con regularización bayesiana (*m-estimate smoothing*), creación de ratios e interacciones matemáticas, reducción de dimensionalidad no supervisada mediante **Análisis de Componentes Principales (PCA)** y selección rigurosa de características basada en **Información Mutua (*Mutual Information*)**.
 
+> 🛠️ Los notebooks (estándar y Para Dummies) incluyen secciones «🛠️ Práctica» para que pongas lo aprendido a prueba.
+> Cada práctica trae su solución desplegable (`<details>`) para consultarla después de intentarlo.
+
 ---
 
 ## 🗺️ Estructura del Módulo

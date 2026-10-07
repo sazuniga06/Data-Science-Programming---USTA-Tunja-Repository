@@ -26,6 +26,8 @@ Bienvenido al módulo de **Clustering y Minería de Reglas de Asociación** de l
 ### 🧸 3. Ruta Didáctica: Para Dummies:
 Ubicada en la subcarpeta [`Para Dummies/`](Para%20Dummies/).
 
+> 🛠️ **Ponlo en práctica:** los cuadernos (estándar y *Para Dummies*) incluyen secciones **«🛠️ Práctica»**: una celda de código para que escribas tu solución y, justo debajo, la **solución guiada desplegable**. Inténtalo primero y abre la solución solo para comparar.
+
 ---
 
 <div align="center">

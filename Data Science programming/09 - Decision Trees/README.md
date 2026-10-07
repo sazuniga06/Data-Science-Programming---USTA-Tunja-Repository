@@ -16,6 +16,9 @@ Este módulo aborda de manera integral los **Modelos Basados en Árboles (*Tree-
 * **Random Forests (Bosques Aleatorios):** Descorrelación de árboles mediante subespacios aleatorios de características e importancia relativa de variables (*Feature Importance*).
 * **Boosting y Desbalance:** Aprendizaje secuencial sobre residuos (AdaBoost, Gradient Boosting, XGBoost) y estrategias de ponderación para clases desbalanceadas (`class_weight='balanced'`).
 
+> 🛠️ Los notebooks (estándar y Para Dummies) incluyen secciones «🛠️ Práctica» para que pongas lo aprendido a prueba.
+> Cada práctica trae su solución desplegable (`<details>`) para consultarla después de intentarlo.
+
 ---
 
 ## 📓 Cuadernos de Clase (Notebooks)

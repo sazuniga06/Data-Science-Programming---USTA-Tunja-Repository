@@ -41,11 +41,13 @@ Para estudiantes que deseen afianzar los conceptos con analogías cotidianas e i
 * [**02a. Listas, Tuplas y Conjuntos (Dummies)**](Para%20Dummies/02a_Estructuras_Listas_Tuplas_Conjuntos_Dummies.ipynb): El carrito de compras y la bolsa sellada inmutable.
 * [**02b. Diccionarios (Dummies)**](Para%20Dummies/02b_Estructuras_Diccionarios_Dummies.ipynb): La libreta de contactos y el archivador de gavetas.
 * [**03. Flujo de Control (Dummies)**](Para%20Dummies/03_Flujo_de_Control_Dummies.ipynb): El semáforo y las decisiones en una bifurcación de caminos.
-* [**04. Funciones (Dummies)**](Para%20Dummies/04_Funciones_Dummies.ipynb): La licuadora automática (ingredientes $	o$ jugo procesado).
+* [**04. Funciones (Dummies)**](Para%20Dummies/04_Funciones_Dummies.ipynb): La licuadora automática (ingredientes $\to$ jugo procesado).
 * [**05. Clases y Objetos (Dummies)**](Para%20Dummies/05_Clases_y_Objetos_Dummies.ipynb): El molde de galletas y las galletas horneadas individuales.
 * [**06. Cadenas de Texto (Dummies)**](Para%20Dummies/06_Manipulacion_de_Cadenas_de_Texto_Dummies.ipynb): Cortar, pegar y limpiar oraciones con f-strings.
 * [**07. Scopes y Ámbitos (Dummies)**](Para%20Dummies/07_Namespaces_y_Scopes_Dummies.ipynb): Secretos de familia vs anuncios en la plaza pública.
 * [**08. Módulos y Paquetes (Dummies)**](Para%20Dummies/08_Modulos_y_Paquetes_Dummies.ipynb): La caja de herramientas organizada por compartimientos.
+
+> 🛠️ Los notebooks incluyen secciones «🛠️ Práctica» con celda para el estudiante y solución desplegable.
 
 ---
 
