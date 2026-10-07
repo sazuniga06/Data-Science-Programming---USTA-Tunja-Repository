@@ -29,6 +29,7 @@ watch(selectedModality, () => {
 });
 
 watch(() => props.course?.id, () => {
+  activeWorkspaceTab.value = 'notebooks';
   selectedBookCategory.value = 'all';
   bookSearchQuery.value = '';
   selectedModality.value = 'standard';
@@ -829,9 +830,14 @@ function copyColabLink(url) {
       </div>
 
       <!-- If course has no datasets -->
-      <div v-if="!course.datasets || course.datasets.length === 0" class="p-12 text-center border border-dashed border-slate-200 dark:border-slate-800 rounded-xl space-y-2 font-mono text-xs text-slate-500">
-        <span class="material-symbols-outlined text-3xl text-slate-400">database</span>
-        <p>No hay datasets registrados actualmente para esta asignatura.</p>
+      <div v-if="!course.datasets || course.datasets.length === 0" class="p-12 text-center border border-dashed border-slate-200 dark:border-slate-800 rounded-xl space-y-3 font-mono text-xs text-slate-500">
+        <span class="material-symbols-outlined text-4xl text-brand-cyan">database</span>
+        <div class="space-y-1">
+          <p class="font-semibold text-slate-800 dark:text-slate-200">Esta asignatura utiliza conjuntos de datos integrados en Python</p>
+          <p class="text-slate-500 max-w-lg mx-auto leading-relaxed">
+            Los cuadernos computacionales de esta materia emplean generadores sintéticos reproducibles y datasets canónicos provistos por librerías (Scikit-Learn, PyTorch, Seaborn y Gymnasium) para experimentación directa sin descargas externas.
+          </p>
+        </div>
       </div>
 
       <div v-else class="grid grid-cols-1 lg:grid-cols-12 gap-6">

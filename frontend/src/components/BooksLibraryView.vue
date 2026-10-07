@@ -99,7 +99,7 @@ const filteredBooks = computed(() => {
           Biblioteca Digital de Libros & Referencias
         </h2>
         <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-          Bibliografía especializada y libros de texto completos: Python, Data Mining, Visual Analytics, Power BI, Tableau y Machine Learning.
+          Bibliografía especializada y libros de texto completos: Python, Data Mining, Machine Learning, Inteligencia Artificial, Visual Analytics, Power BI y Tableau.
         </p>
       </div>
 

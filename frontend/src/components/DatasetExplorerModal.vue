@@ -12,14 +12,40 @@ const emit = defineEmits(['close', 'show-toast']);
 
 const searchQuery = ref('');
 const filterCleaning = ref('all'); // 'all' | 'dirty' | 'clean'
+const selectedCourseFilter = ref('all');
 const selectedIndex = ref(0);
 const isDownloading = ref(false);
 
-const dirtyCount = computed(() => props.datasets.filter(d => d.requires_cleaning).length);
-const cleanCount = computed(() => props.datasets.filter(d => !d.requires_cleaning).length);
+const courseCounts = computed(() => {
+  const map = {};
+  props.datasets.forEach(d => {
+    const c = d.course_name || 'General';
+    map[c] = (map[c] || 0) + 1;
+  });
+  return map;
+});
+
+const dirtyCount = computed(() => {
+  let list = props.datasets;
+  if (selectedCourseFilter.value !== 'all') {
+    list = list.filter(d => (d.course_name || '') === selectedCourseFilter.value);
+  }
+  return list.filter(d => d.requires_cleaning).length;
+});
+
+const cleanCount = computed(() => {
+  let list = props.datasets;
+  if (selectedCourseFilter.value !== 'all') {
+    list = list.filter(d => (d.course_name || '') === selectedCourseFilter.value);
+  }
+  return list.filter(d => !d.requires_cleaning).length;
+});
 
 const filteredDatasets = computed(() => {
   let list = props.datasets;
+  if (selectedCourseFilter.value !== 'all') {
+    list = list.filter(d => (d.course_name || '') === selectedCourseFilter.value);
+  }
   if (filterCleaning.value === 'dirty') {
     list = list.filter(d => d.requires_cleaning);
   } else if (filterCleaning.value === 'clean') {
@@ -159,6 +185,27 @@ function copySnippet(ds) {
                 class="w-full pl-8 pr-3 py-1.5 rounded-lg bg-white dark:bg-space-900 border border-slate-200 dark:border-slate-800 text-xs font-mono text-slate-900 dark:text-slate-100 placeholder:text-slate-400 focus:outline-none focus:border-brand-cyan transition-colors"
               />
             </div>
+
+            <!-- Course Filter Tabs -->
+            <div class="flex items-center gap-1 overflow-x-auto text-[10px] font-mono scrollbar-none pb-0.5">
+              <button 
+                @click="selectedCourseFilter = 'all'; selectedIndex = 0"
+                class="px-2 py-0.5 rounded transition-all shrink-0 cursor-pointer"
+                :class="selectedCourseFilter === 'all' ? 'bg-brand-cyan/20 text-brand-cyan font-semibold border border-brand-cyan/30' : 'bg-slate-200/70 text-slate-600 dark:bg-space-900 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'"
+              >
+                Todas ({{ datasets.length }})
+              </button>
+              <button 
+                v-for="(cnt, cname) in courseCounts" 
+                :key="cname"
+                @click="selectedCourseFilter = cname; selectedIndex = 0"
+                class="px-2 py-0.5 rounded transition-all shrink-0 cursor-pointer"
+                :class="selectedCourseFilter === cname ? 'bg-brand-cyan/20 text-brand-cyan font-semibold border border-brand-cyan/30' : 'bg-slate-200/70 text-slate-600 dark:bg-space-900 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'"
+              >
+                {{ cname }} ({{ cnt }})
+              </button>
+            </div>
+
             <!-- Quality Filter Tabs -->
             <div class="flex items-center gap-1.5 pt-0.5 overflow-x-auto text-[10px] font-mono scrollbar-none">
               <button 
@@ -166,7 +213,7 @@ function copySnippet(ds) {
                 class="px-2 py-0.5 rounded transition-all shrink-0 cursor-pointer"
                 :class="filterCleaning === 'all' ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 font-semibold shadow-xs' : 'bg-slate-200/70 text-slate-600 dark:bg-space-900 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100'"
               >
-                Todos ({{ datasets.length }})
+                Todos ({{ filteredDatasets.length }})
               </button>
               <button 
                 @click="filterCleaning = 'dirty'; selectedIndex = 0"

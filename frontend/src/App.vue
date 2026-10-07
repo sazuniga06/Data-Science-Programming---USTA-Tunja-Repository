@@ -202,7 +202,9 @@ onMounted(() => {
     <GlobalSearchModal 
       v-if="isGlobalSearchOpen"
       :all-notebooks="allNotebooks"
+      :all-books="allBooks"
       @close="isGlobalSearchOpen = false"
+      @open-pdf="openPdfViewer"
     />
 
     <PdfViewerModal 

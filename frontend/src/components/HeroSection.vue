@@ -20,12 +20,12 @@ const executionOutput = ref('R² Promedio 5-Fold CV: 0.8871 (Modelo Validado con
 
 // Dynamic metric aggregations across the entire academic ecosystem
 const totalNotebooks = computed(() => {
-  if (!props.courses || props.courses.length === 0) return 344;
+  if (!props.courses || props.courses.length === 0) return 440;
   return props.courses.reduce((acc, c) => acc + (c.notebooks?.length || c.stats?.total_notebooks || 0), 0);
 });
 
 const totalModules = computed(() => {
-  if (!props.courses || props.courses.length === 0) return 24;
+  if (!props.courses || props.courses.length === 0) return 47;
   return props.courses.reduce((acc, c) => acc + (c.modules?.length || 0), 0);
 });
 
@@ -85,6 +85,18 @@ const snippets = {
 <div class="code-line"></div>
 <div class="code-line"><span class="text-brand-amber">print</span>(<span class="text-emerald-400">"Motor Spark Activo: Procesamiento en Micro-Lotes listo"</span>)</div>`,
     output: 'Motor Spark Activo: Procesamiento en Micro-Lotes listo (0.012s de latencia)'
+  },
+  va: {
+    title: 'Visual Analytics & Dashboards Interactivos',
+    code: `<div class="code-line"><span class="text-brand-amber">import</span> plotly.express as px, pandas as pd</div>
+<div class="code-line"><span class="text-brand-amber">import</span> seaborn as sns, matplotlib.pyplot as plt</div>
+<div class="code-line"></div>
+<div class="code-line"><span class="text-slate-500"># Visualización Multidimensional & Canales Perceptuales</span></div>
+<div class="code-line">fig = px.scatter(df, x=<span class="text-emerald-400">"ventas"</span>, y=<span class="text-emerald-400">"margen"</span>, color=<span class="text-emerald-400">"segmento"</span>, size=<span class="text-emerald-400">"volumen"</span>)</div>
+<div class="code-line">fig.update_layout(template=<span class="text-emerald-400">"plotly_dark"</span>, hovermode=<span class="text-emerald-400">"closest"</span>)</div>
+<div class="code-line"></div>
+<div class="code-line"><span class="text-brand-amber">print</span>(<span class="text-emerald-400">"Analítica Visual: 4 canales perceptuales integrados"</span>)</div>`,
+    output: 'Analítica Visual: 4 canales perceptuales integrados (x, y, color, tamaño)'
   }
 };
 
@@ -222,6 +234,14 @@ function scrollToDirectory() {
                 title="Inteligencia Artificial & Lógica / Búsqueda"
               >
                 IA
+              </button>
+              <button 
+                @click="selectSnippet('va')"
+                class="px-2 py-0.5 rounded transition-colors"
+                :class="activeSnippetKey === 'va' ? 'bg-brand-cyan/15 text-brand-cyan font-semibold' : 'text-slate-500 hover:text-slate-800 dark:hover:text-slate-200'"
+                title="Visual Analytics & Dashboards Interactivos"
+              >
+                VISUAL
               </button>
               <button 
                 @click="selectSnippet('bigdata')"

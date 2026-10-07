@@ -115,8 +115,8 @@ COURSE_DEFINITIONS = [
         "title": "Aprendizaje Automático Supervisado y No Supervisado",
         "folder": "Machine Learning",
         "icon": "🧠",
-        "badge": "Biblioteca Activa (40 Libros)",
-        "badge_color": "violet",
+        "badge": "Activo / Disponible",
+        "badge_color": "emerald",
         "color": "#8b5cf6",
         "gradient": "from-violet-500/20 via-purple-600/10 to-transparent",
         "border_glow": "border-violet-500/40",
@@ -3545,7 +3545,7 @@ def rebuild_catalog_js():
     # Crear enlaces simbólicos para frontend/public/Libros para soporte de Vite dev
     pub_libros_dir = BASE_DIR / "frontend" / "public" / "Libros"
     pub_libros_dir.mkdir(parents=True, exist_ok=True)
-    for sub in ["Data Mining", "Machine Learning", "Visual Analytics"]:
+    for sub in ["Data Mining", "Machine Learning", "Visual Analytics", "Inteligencia Artificial"]:
         target = DOCS_DIR / "Libros" / sub
         link = pub_libros_dir / sub
         if target.exists() and not link.exists():
