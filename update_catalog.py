@@ -131,15 +131,15 @@ COURSE_DEFINITIONS = [
         "title": "Procesamiento Distribuido y Masivo",
         "folder": "Big Data",
         "icon": "⚡",
-        "badge": "En Construcción",
-        "badge_color": "amber",
+        "badge": "Activo / Disponible",
+        "badge_color": "emerald",
         "color": "#f59e0b",
         "gradient": "from-amber-500/20 via-orange-600/10 to-transparent",
         "border_glow": "border-amber-500/40",
-        "description": "Computación distribuida con Apache Spark, PySpark, DuckDB, streaming en tiempo real con Kafka, arquitectura Lakehouse y almacenamiento optimizado en la nube.",
+        "description": "Fundamentos de Big Data, procesamiento y almacenamiento distribuido (MapReduce, HDFS, Spark, HBase), Data Warehousing y Data Lake, analítica y visualización a escala, seguridad y gobernanza de datos, streaming, grafos y tendencias emergentes.",
         "level": "Especialización",
         "semester": "Semestre II",
-        "active": False
+        "active": True
     },
     {
         "id": "introduccion-ia",
@@ -566,12 +566,72 @@ MODULES_ML = [
     }
 ]
 
+MODULES_BIG_DATA = [
+    {
+        "id": "00",
+        "name": "00 - Fundamentos de Big Data",
+        "title": "Fundamentos de Big Data",
+        "icon": "🌐",
+        "color": "#0ea5e9",
+        "description": "Las V del Big Data, su importancia actual, tipos de datos (estructurados, semiestructurados y no estructurados) y el ciclo de vida de los datos."
+    },
+    {
+        "id": "01",
+        "name": "01 - Procesamiento y Almacenamiento Distribuido",
+        "title": "Procesamiento y Almacenamiento Distribuido",
+        "icon": "🗄️",
+        "color": "#f59e0b",
+        "description": "Hadoop, Spark, SQL y NoSQL, MapReduce desde cero y sus limitaciones, y los frameworks distribuidos HDFS, Spark y HBase."
+    },
+    {
+        "id": "02",
+        "name": "02 - Data Warehousing y Data Lake",
+        "title": "Data Warehousing y Data Lake",
+        "icon": "🏢",
+        "color": "#10b981",
+        "description": "Esquema estrella, ETL y OLAP; Data Lake con Parquet particionado, Hive y Pig; y la comparación entre almacén y lago de datos."
+    },
+    {
+        "id": "03",
+        "name": "03 - Analitica y Visualizacion en Big Data",
+        "title": "Analítica y Visualización en Big Data",
+        "icon": "📊",
+        "color": "#8b5cf6",
+        "description": "Algoritmos aproximados, ML/DL/NLP a escala con Spark MLlib, visualización de datos masivos con Tableau, Power BI y D3, y storytelling con datos."
+    },
+    {
+        "id": "04",
+        "name": "04 - Seguridad y Gobernanza de Big Data",
+        "title": "Seguridad y Gobernanza de Big Data",
+        "icon": "🛡️",
+        "color": "#ef4444",
+        "description": "Brechas, accesos no autorizados y data leakage; encriptación, control de acceso y auditoría; propiedad, responsabilidad y transparencia de los datos."
+    },
+    {
+        "id": "05",
+        "name": "05 - Avances y Tendencias en Big Data",
+        "title": "Avances y Tendencias en Big Data",
+        "icon": "🚀",
+        "color": "#ec4899",
+        "description": "Stream processing y graph processing (ventanas, Kafka, PageRank, Pregel), analíticas con IA, aprendizaje federado y blockchain."
+    },
+    {
+        "id": "hw",
+        "name": "homeworks",
+        "title": "Talleres Prácticos Evaluativos (Hands-On)",
+        "icon": "📝",
+        "color": "#dc2626",
+        "description": "Un taller por módulo, con edición estándar y Para Dummies: retos con autoverificación, rúbrica y checklist de entrega."
+    }
+]
+
 COURSE_MODULE_DEFAULTS = {
     "data-science-programming": DEFAULT_MODULES_DSP,
     "data-mining": MODULES_DATA_MINING,
     "introduccion-ia": MODULES_IA,
     "visual-analytics": MODULES_VISUAL_ANALYTICS,
     "machine-learning": MODULES_ML,
+    "big-data": MODULES_BIG_DATA,
 }
 
 PALETTE = [
